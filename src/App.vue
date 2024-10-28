@@ -2,17 +2,19 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <NavAppBar/>
   <router-view/>
-
+  <AppFooter/>
 </template>
 
 <script>
 // import { HelloWorld } from './router';
 import NavAppBar from './components/NavBar.vue'; // Import the Navbar component
-
+import AppFooter from './components/Footer.vue'; // Import the Footer component
+ 
 export default {
   name: 'App',
   components: {
-    NavAppBar
+    NavAppBar,
+    AppFooter,
   }
 }
 </script>

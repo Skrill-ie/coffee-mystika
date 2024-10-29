@@ -1,7 +1,7 @@
 <template>
     <div>
       <h1>Blog</h1>
-      <p>This is the blog butol page.</p>
+      <p>This is the blog boang page.</p>
     </div>
   </template>
   

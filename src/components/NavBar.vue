@@ -15,7 +15,7 @@
             <router-link to="/about" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">About</router-link>
           </li>
           <li class="flex-1">
-            <router-link to="/contact" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">Blog</router-link>
+            <router-link to="/blog" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">Blog</router-link>
           </li>
           <li class="flex-1">
             <router-link to="/contact" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">Contact Us</router-link>

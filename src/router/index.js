@@ -5,8 +5,10 @@ import AboutUs from '../components/About.vue';
 import ContactUs from '../components/Contact.vue';
 import BlogPage from '../components/Blog.vue';
 
+
 // export all components
 export { default as HelloWorld } from '../components/HelloWorld.vue';
+// export { default as MainSlider } from '../components/sub-component/MainSlider.vue';
 
 
 //routes

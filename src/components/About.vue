@@ -1,15 +1,15 @@
 <template>
     <div>
-      <MainSlider :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
+      <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
     </div>
   </template>
   
   <script>
-  import MainSlider from './sub-component/MainSlider.vue'
+  import HeroSectionMain from './sub-component/HeroSectionMain.vue'
   export default {
     name: 'AboutUs',
     components: {
-      MainSlider,
+      HeroSectionMain,
     },
     data() {
     return {

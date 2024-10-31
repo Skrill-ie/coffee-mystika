@@ -24,6 +24,15 @@ module.exports = {
         radley: ['Radley', 'serif'], // Custom font for Radley
         imFell: ['Im Fell English', 'serif'], // Custom font for Im Fell
       },
+      fontSize:{
+        sm:'20px',
+        mid:'32px',
+        base:'38px',
+        xl:'80px',
+      },
+      padding:{
+        '32rem': '32rem',
+      },
     },
   },
   plugins: [],

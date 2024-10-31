@@ -1,11 +1,12 @@
 <template>
-    <div class="h-screen bg-cover bg-center h-fit pb-48"  :style="{ backgroundImage: `url(${heroImage})` }">
-        <div class="container mx-auto pt-[32rem]">
-            <h1 class="text-xl text-left font-radley text-text-title">{{ mainText }}</h1>
-            <p class="text-base text-left font-radley text-text-title">{{ subText }}</p>
-            <p class="text-mid text-left font-radley text-text-paragraph pt-7" v-if="paragraphText">{{ paragraphText }}</p>
+    <div class="h-screen bg-cover bg-center bg-fixed"  :style="{ backgroundImage: `url(${heroImage})` }">
+        <div class="container mx-auto relative h-screen">
+            <div class="absolute bottom-20 left-0 text-left font-radley">
+                <h1 class="text-xl text-text-title">{{ mainText }}</h1>
+                <div class="text-sm text-text-title w-1/2">{{ subText }}</div>
+                <p class="text-text-paragraph pt-7" v-if="paragraphText">{{ paragraphText }}</p>
+            </div>  
         </div>
-
     </div>
 </template>
 <script>

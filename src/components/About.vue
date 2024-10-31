@@ -1,6 +1,8 @@
 <template>
     <div>
       <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
+      <div class="h-screen bg-black-secondary"></div>
+      <div class></div>
     </div>
   </template>
   

@@ -1,8 +1,10 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <NavAppBar/>
-  <router-view/>
-  <AppFooter/>
+  <div class="-mt-40">
+    <router-view/>
+    <AppFooter/>
+  </div>
   <div class="absolute bottom-0 right-0 w-24 h-24 m-10 bg-text-title rounded-full shine-effect"><SocialIcons/></div>
 </template>
 

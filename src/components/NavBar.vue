@@ -1,9 +1,9 @@
 <template>
   <div class="sticky top-0 z-10 shadow">
-    <div class="bg-black-primary text-sm">
+    <div class="bg-black-primary text-xs">
       <div class="container mx-auto flex justify-between py-2 ">
-        <p class="flex"><img src="../assets/icons/Vector.png"><span class="text-text-divider">Location :</span><span class="text-text-paragraph"> Valencia Negros Oriental</span></p>
-        <p class="flex"><img src="../assets/icons/Vector-1.png"><span class="text-text-divider">Opening Hours :</span><span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span></p>
+        <div class="flex w-64 items-center "><img src="../assets/icons/Vector.png"><span class="text-text-divider">Location :</span><span class="text-text-paragraph"> Valencia Negros Oriental</span></div>
+        <div class="flex items-center "><img src="../assets/icons/Vector-1.png"><span class="text-text-divider">Opening Hours :</span><span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span></div>
       </div>
     </div>
     <nav class="py-6 bg-black-secondary bg-opacity-65  text-white font-radley">

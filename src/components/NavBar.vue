@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 z-10 shadow">
+  <div class="sticky top-0 z-40 shadow">
     <div class="bg-black-primary text-xs">
       <div class="container mx-auto flex justify-between py-2 ">
         <div class="flex w-64 items-center "><img src="../assets/icons/Vector.png"><span class="text-text-divider">Location :</span><span class="text-text-paragraph"> Valencia Negros Oriental</span></div>

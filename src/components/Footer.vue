@@ -1,7 +1,7 @@
 <template>
     <div class="bg-black-secondary font-radley">
         <div class="bg-black-primary">
-            <div class="grid grid-cols-11 gap-x-20 container mx-auto pb-10">
+            <div class="grid grid-cols-11 gap-x-20 container mx-auto py-10">
                 <div class="col-span-4">
                     <div class="flex items-center mb-10">
                         <div class="pr-8"><img src="../assets/icons/cafe-mystika-icon-2.png"></div>

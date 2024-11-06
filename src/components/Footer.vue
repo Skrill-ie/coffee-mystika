@@ -1,7 +1,7 @@
 <template>
     <div class="bg-black-secondary font-radley">
         <div class="bg-black-primary">
-            <div class="grid grid-cols-11 gap-x-20 container mx-auto pb-10">
+            <div class="grid grid-cols-11 gap-x-20 container mx-auto py-10">
                 <div class="col-span-4">
                     <div class="flex items-center mb-10">
                         <div class="pr-8"><img src="../assets/icons/cafe-mystika-icon-2.png"></div>
@@ -13,8 +13,8 @@
                     <div class="text-3xl mb-10 text-text-title">Contact Us</div >
                     <ul class="text-text-paragraph ">
                         <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector.png" alt=""> Valencia, Negros Oriental</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector 2.png" alt="">Help@mystika.com</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-1 2.png" alt="">+639 - 0000 - 000</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-2.png" alt="">Help@mystika.com</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
                         <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>
                     </ul>
                 </div>

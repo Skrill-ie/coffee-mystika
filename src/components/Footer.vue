@@ -1,24 +1,24 @@
 <template>
     <div class="bg-black-secondary font-radley">
-        <div class="bg-black-primary">
-            <div class="grid grid-cols-11 gap-x-20 container mx-auto py-10">
-                <div class="col-span-4">
-                    <div class="flex items-center mb-10">
+        <div class="bg-black-primary pt-10 md:pt-0">
+            <div class="grid grid-cols-1 lg:grid-cols-11 gap-x-20 container mx-auto md:py-10">
+                <div class="col-span-4 px-5 border-b-2 md:border-none border-black-secondary">
+                    <div class="flex items-center justify-center md:justify-items-start md:mb-10">
                         <div class="pr-8"><img src="../assets/icons/cafe-mystika-icon-2.png"></div>
                         <div><img src="../assets/icons/cafe-mystika-word.png"></div>
                     </div>
-                    <p class="text-left text-text-paragraph py-10">Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers</p>
+                    <p class="md:text-left text-text-paragraph py-10">Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers</p>
                 </div>
-                <div class="col-span-3 border-x-2 border-black-secondary">
+                <div class="col-span-4 md:col-span-3 md:border-x-2 border-black-secondary px-5 order-3 md:order-2">
                     <div class="text-3xl mb-10 text-text-title">Contact Us</div >
                     <ul class="text-text-paragraph ">
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector.png" alt=""> Valencia, Negros Oriental</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-2.png" alt="">Help@mystika.com</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-between md:justify-start w-64"><img class="mr-5" src="../assets/icons/Vector.png" alt=""> Valencia, Negros Oriental</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-between md:justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-2.png" alt="">Help@mystika.com</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-between md:justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-between md:justify-start w-64"><img class="mr-5" src="../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>
                     </ul>
                 </div>
-                <div class="col-span-4">
+                <div class="col-span-4 order-2 md:order-3 py-10">
                     <div class="text-3xl mb-10 text-text-title">We're Here</div>
                     <div class="flex justify-center">
                         <iframe 
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-text-paragraph py-2 text-sm">Copyright @ Cafemystika 2024</div>
+        <div class="text-text-paragraph py-2 text-xs md:text-sm">Copyright @ Cafemystika 2024</div>
     </div>
 </template>
 <script>

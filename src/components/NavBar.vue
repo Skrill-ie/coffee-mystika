@@ -50,16 +50,8 @@
         </button>
 
         <!-- Sidebar Links -->
-        <div class="mt-16 p-4">
-          <div class="text-left text-2xl text-text-divider mt-10">Merchs</div>
-          <div class="grid grid-cols-2 items-center mt-5 mb-16 w-">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-          </div>
-        </div>
-        <div class="p-4 pr-0">
+
+        <div class="mt-16 p-4 pr-0">
           <ul class="space-y-4 text-left">
             <li><router-link to="/" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Home</router-link></li>
             <li><router-link to="/" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Classes</router-link></li>
@@ -68,21 +60,21 @@
             <li><router-link to="/contact" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Contact Us</router-link></li>
           </ul>
         </div>
-<!--        <div class="mx-auto p-4 pb-10 border-t-2 border-black-primary absolute  inset-x-0 bottom-0">-->
-<!--          <div class="text-left text-2xl text-text-divider">Contact</div>-->
-<!--          <div class="flex items-center mt-6 mb-4">-->
-<!--            <div class="w-6 h-6 mr-3">-->
-<!--              <img src="../assets/icons/Vector.png">-->
-<!--            </div>-->
-<!--            <span class="text-text-paragraph"> Valencia Negros Oriental</span>-->
-<!--          </div>-->
-<!--          <div class="flex items-center ">-->
-<!--            <div class="w-6 h-6 mr-3">-->
-<!--              <img src="../assets/icons/Vector-1.png">-->
-<!--            </div>-->
-<!--            <span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span>-->
-<!--          </div>-->
-<!--        </div>-->
+        <div class="mx-auto p-4 pb-10 border-t-2 border-black-primary absolute  inset-x-0 bottom-0">
+          <div class="text-left text-2xl text-text-divider">Contact</div>
+          <div class="flex items-center mt-6 mb-4">
+            <div class="w-6 h-6 mr-3">
+              <img src="../assets/icons/Vector.png">
+            </div>
+            <span class="text-text-paragraph"> Valencia Negros Oriental</span>
+          </div>
+          <div class="flex items-center ">
+            <div class="w-6 h-6 mr-3">
+              <img src="../assets/icons/Vector-1.png">
+            </div>
+            <span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span>
+          </div>
+        </div>
       </div>
     </nav>
   </div>

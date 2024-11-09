@@ -13,7 +13,7 @@
         <!--   Main Logo    -->
         <router-link to="/"><img src="../assets/icons/cafe-mystika-icon.png"></router-link>
         <!--     Burger menu     -->
-        <button @click="isOpen = !isOpen" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <button @click="toggleSidebar" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -39,16 +39,15 @@
       </div>
 
       <!-- Mobile Sidebar Menu (Slides in from the Right) -->
-      <div :class="{'translate-x-0': isOpen, 'translate-x-full': !isOpen}"
+      <div :class="open? 'translate-x-0' : 'translate-x-full'"
            class="fixed top-0 right-0 h-full w-64 bg-black-secondary text-white transform transition-transform duration-300 ease-in-out z-50 lg:hidden">
         <div class="absolute top-6 left-4 w-24"><img src="../assets/icons/cafe-mystika-word.png"></div>
         <!-- Close Button (for mobile sidebar) -->
-        <button @click="isOpen = false" class="absolute top-4 right-4 text-white focus:outline-none">
+        <button @click="toggleSidebar" class="absolute top-4 right-4 text-white focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-
         <!-- Sidebar Links -->
 
         <div class="mt-16 p-4 pr-0">
@@ -84,9 +83,17 @@
 export default {
   name: 'NavAppBar',
   data() {
-    return {
-      isOpen: false, // Track if the mobile menu is open or closed
-    };
   },
+  props: {
+    open: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  methods: {
+    toggleSidebar() {
+      this.$emit('toggle-sidebar');
+    },
+  }
 };
 </script>

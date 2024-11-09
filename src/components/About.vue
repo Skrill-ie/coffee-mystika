@@ -2,7 +2,7 @@
     <div class="overflow-x-hidden">
       <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
       <div class="md:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
           <div class="flex md:gap-5 h-4/5">
             <div class="w-2/3 flex flex-col md:gap-5">
               <div class="h-2/3">
@@ -16,26 +16,26 @@
               <img src="../assets/images/image-1.png" alt="Latte Art" class="w-full h-full object-cover">
             </div>
           </div>
-          <div class="text-left w-96 mx-auto px-4 md:px-0">
+          <div class="text-left lg:w-96 mx-auto px-4 md:px-0">
             <p class="text-center md:text-left text-5xl mb-10 text-text-title">A History of <br>Cafe Mystika</p>
             <p class="text-center md:text-left text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </p>
           </div>
         </div>
       </div>
       <div class="bg-black-primary">
-        <div class="flex flex-col md:flex-row container mx-auto text-center divide-y md:divide-y-0 md:divide-x py-20">
+        <div class="flex flex-col md:flex-row container mx-auto text-center divide-black-secondary divide-y-2 md:divide-y-0 md:divide-x py-20">
           <div class="h-64 md:w-1/3 flex flex-col items-center justify-center p-10 font-radley text-text-title">
-            <div class="w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
+            <div class="w-1/2 md:w-full lg:w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
             <div class="text-2xl ">Where we Started</div>
             <div class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. </div>
           </div>
           <div class="h-64 md:w-1/3 flex flex-col items-center justify-center p-10 font-radley text-text-title">
-            <div class="w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
+            <div class="w-1/2 md:w-full lg:w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
             <div class="text-2xl ">Where we Started</div>
             <div class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. </div>
           </div>
           <div class="h-64 md:w-1/3 flex flex-col items-center justify-center p-10 font-radley text-text-title">
-            <div class="w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
+            <div class="w-1/2 md:w-full lg:w-1/2 border border-4 border-text-divider text-5xl mb-10 py-2">2022</div>
             <div class="text-2xl ">Where we Started</div>
             <div class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. </div>
           </div>
@@ -43,20 +43,20 @@
       </div>
       <div class="bg-fixed py-10" :style="{ backgroundImage: `url(${require('@/assets/images/Background.png')})` }">
         <div class="text-5xl mb-10 font-radley text-text-title">We Craft Tasty Moments to <br> Remember</div>
-        <div class="flex flex-col md:flex-row container mx-auto justify-between gap-5 px-5 md:px-20">
-          <div class="h-60 w-full md:w-60 bg-black-primary p-8 flex flex-col justify-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between gap-5 px-20">
+          <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/drying.png">
             <p class="mt-10 text-lg text-text-title font-radley">Drying the Beans</p>
           </div>
-          <div class="h-60 w-full md:w-60 bg-black-primary p-8 flex flex-col justify-center">
+          <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/roasting.png">
             <p class="mt-10 text-lg text-text-title font-radley">Roasting</p>
           </div>
-          <div class="h-60 w-full md:w-60 bg-black-primary p-8 flex flex-col justify-center">
+          <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/grinding.png">
             <p class="mt-10 text-lg text-text-title font-radley">Grinding</p>
           </div>
-          <div class="h-60 w-full md:w-60 bg-black-primary p-8 flex flex-col justify-center">
+          <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/done.png">
             <p class="mt-10 text-lg text-text-title font-radley">Perfect Coffee</p>
           </div>
@@ -64,10 +64,10 @@
       </div>
       <div class="bg-black-primary py-20">
         <div class="text-5xl mb-10 font-radley text-text-title">Get to Know our Friendly <br> Baristas</div>
-        <div class="flex flex flex-col md:flex-row container mx-auto justify-between gap-10 px-5">
-          <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 w-full md:w-1/4 relative">
-            <img class="relative z-10" :src="barista.baristaImage" :alt="barista.baristaName">
-            <div class="-mt-14 px-5 z-20 absolute bottom-0 left-0 w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 container mx-auto justify-between gap-10 px-5">
+          <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 mx-auto w-3/4 md:w-full relative bg-center"
+               :style="{ backgroundImage: `url(${barista.baristaImage})` }">
+            <div class=" lg:-mt-14 px-5 z-20 absolute -bottom-5 left-0 w-full">
               <div class="bg-black-secondary py-3 font-radley shadow">
                 <h2 class="text-text-title text-lg">{{ barista.baristaName }}</h2>
                 <p class="text-text-paragraph mb-3">Gen. {{ barista.baristaGen }} Barista</p>
@@ -78,8 +78,8 @@
         </div>
       </div>
       <div class="md:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 container mx-auto items-center">
-          <div class="px-5 md:px-0 md:text-left md:w-96 mx-auto order-2 md:order-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 px-5  container mx-auto items-center">
+          <div class="px-5 md:px-0 md:text-left md:w-80 mx-auto order-2 md:order-1">
             <p class="text-5xl mb-10 text-text-title">Vision</p>
             <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
             <p class="text-5xl my-10 text-text-title">Mission</p>

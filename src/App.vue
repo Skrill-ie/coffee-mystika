@@ -1,6 +1,11 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <NavAppBar/>
+  <div
+      v-if="open"
+      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-40"
+      @click="toggleSidebar"
+  ></div>
+  <NavAppBar :open="open" @toggle-sidebar="toggleSidebar"/>
   <div class="-mt-40">
     <router-view/>
     <AppFooter/>
@@ -19,7 +24,17 @@ export default {
     NavAppBar,
     AppFooter,
     SocialIcons,
-  }
+  },
+  data() {
+    return {
+      open: false,
+    };
+  },
+  methods: {
+    toggleSidebar() {
+      this.open = !this.open;
+    },
+  },
 }
 </script>
 

@@ -4,7 +4,7 @@
     <div class="bg-black-primary text-xs hidden md:block">
       <div class="container mx-auto flex justify-between py-2 md:px-10 lg:px-5">
         <div class="flex w-64 items-center "><img src="../assets/icons/Vector.png"><span class="text-text-divider">Location :</span><span class="text-text-paragraph"> Valencia Negros Oriental</span></div>
-        <div class="flex items-center "><img src="../assets/icons/Vector-1.png"><span class="text-text-divider">Opening Hours :</span><span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span></div>
+        <div class="flex items-center "><img src="../assets/icons/Vector-1.png"><span class="ml-1 text-text-divider ">Opening Hours :</span><span class="text-text-paragraph"> 10 : 00 AM - 11 : 00 PM</span></div>
       </div>
     </div>
     <!--  main nav  -->

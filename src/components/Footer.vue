@@ -9,7 +9,7 @@
                     </div>
                     <p class="xl:text-left text-text-paragraph py-10 max-w-md mx-auto">Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers</p>
                 </div>
-                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-3 md:order-2 px-5 py-10 xl:py-0">
+                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-3 md:order-2 px-5 lg:px-10 py-10 xl:py-0">
                     <div class="text-3xl mb-10 text-left text-text-title">Contact Us</div >
                     <ul class="text-text-paragraph ">
                         <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>

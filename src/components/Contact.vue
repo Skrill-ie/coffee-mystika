@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-24 md:mt-40">
+    <div class="mt-24 md:mt-30">
       <div class="py-20 container mx-auto px-5 md:px-10">
         <p class="text-5xl mb-10 font-radley text-text-title ">Have a Word with Us</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">

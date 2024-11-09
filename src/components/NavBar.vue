@@ -35,12 +35,12 @@
                 <router-link to="/contact" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">Contact Us</router-link>
               </li>
         </ul>
-        <router-link to="/" class="hidden lg:block"><img src="../assets/icons/shop-icon.png"></router-link>
+        <button @click="toggleModal" class="hidden lg:block"><img src="../assets/icons/shop-icon.png"></button>
+        <ModalComponent :isOpen="openModal" @close="toggleModal" />
       </div>
-
       <!-- Mobile Sidebar Menu (Slides in from the Right) -->
-      <div :class="open? 'translate-x-0' : 'translate-x-full'"
-           class="fixed top-0 right-0 h-full w-64 bg-black-secondary text-white transform transition-transform duration-300 ease-in-out z-50 lg:hidden">
+      <div :class="openSidebar? 'translate-x-0' : 'translate-x-full'"
+           class="fixed top-0 right-0 h-full w-64 bg-black-secondary text-white transform transition-transform duration-300 ease-in-out z-40 lg:hidden">
         <div class="absolute top-6 left-4 w-24"><img src="../assets/icons/cafe-mystika-word.png"></div>
         <!-- Close Button (for mobile sidebar) -->
         <button @click="toggleSidebar" class="absolute top-4 right-4 text-white focus:outline-none">
@@ -52,7 +52,7 @@
 
         <div class="mt-16 p-4 pr-0">
           <ul class="space-y-4 text-left">
-            <li><router-link to="/" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Home</router-link></li>
+            <li><button @click="toggleModal" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150">Shop</button></li>
             <li><router-link to="/" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Classes</router-link></li>
             <li><router-link to="/about" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">About</router-link></li>
             <li><router-link to="/blog" class="block px-2 py-3 rounded-l-md transition ease-in-out delay-150" exact-active-class="bg-button-active">Blog</router-link></li>
@@ -80,19 +80,37 @@
 </template>
 
 <script>
+
+import ModalComponent from "./sub-component/Modal.vue";
+
 export default {
   name: 'NavAppBar',
+  components: {
+    ModalComponent,
+  },
   data() {
+    return {
+      // isModalOpen: false,
+    };
   },
   props: {
-    open: {
+    openSidebar: {
       type: Boolean,
       required: true,
     },
+    openModal: {
+      type: Boolean,
+      required: true,
+    },
+
   },
   methods: {
     toggleSidebar() {
       this.$emit('toggle-sidebar');
+    },
+    toggleModal() {
+      // this.isModalOpen = !this.isModalOpen;
+      this.$emit('toggle-modal')// Toggles the modal state
     },
   }
 };

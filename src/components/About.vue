@@ -67,7 +67,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 container mx-auto justify-between gap-10 px-5">
           <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 mx-auto w-3/4 md:w-full relative bg-center"
                :style="{ backgroundImage: `url(${barista.baristaImage})` }">
-            <div class=" lg:-mt-14 px-5 z-20 absolute -bottom-5 left-0 w-full">
+            <div class=" lg:-mt-14 px-5 z-10 absolute -bottom-5 left-0 w-full">
               <div class="bg-black-secondary py-3 font-radley shadow">
                 <h2 class="text-text-title text-lg">{{ barista.baristaName }}</h2>
                 <p class="text-text-paragraph mb-3">Gen. {{ barista.baristaGen }} Barista</p>

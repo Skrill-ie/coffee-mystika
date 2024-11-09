@@ -1,11 +1,18 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <!-- overlay for sidebar -->
   <div
-      v-if="open"
-      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-40"
+      v-if="openSidebar"
+      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-20"
       @click="toggleSidebar"
   ></div>
-  <NavAppBar :open="open" @toggle-sidebar="toggleSidebar"/>
+  <!-- overlay for modal -->
+  <div
+      v-if="openModal"
+      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-30"
+      @click="toggleModal"
+  ></div>
+  <NavAppBar :openSidebar="openSidebar" :openModal="openModal" @toggle-sidebar="toggleSidebar" @toggle-modal="toggleModal"/>
   <div class="-mt-40">
     <router-view/>
     <AppFooter/>
@@ -17,6 +24,7 @@
 import NavAppBar from './components/NavBar.vue'; // Import the Navbar component
 import AppFooter from './components/Footer.vue'; // Import the Footer component
 import SocialIcons from './components/SocialIcon.vue'; // Import the Footer component
+
  
 export default {
   name: 'App',
@@ -27,13 +35,17 @@ export default {
   },
   data() {
     return {
-      open: false,
+      openSidebar: false,
+      openModal:false,
     };
   },
   methods: {
     toggleSidebar() {
-      this.open = !this.open;
+      this.openSidebar = !this.openSidebar;
     },
+    toggleModal(){
+      this.openModal = !this.openModal;
+    }
   },
 }
 </script>

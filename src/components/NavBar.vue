@@ -21,7 +21,7 @@
           </button>
 
         <!--   Desktop Nav Bar   -->
-        <ul class="hidden lg:grid grid-cols-4 gap-x-8 lg:w-3/4 xl:w-2/4 justify-between" id="navbar-default">
+        <ul class="hidden lg:grid grid-cols-4 gap-x-8 lg:w-3/5 xl:w-2/4 justify-between" id="navbar-default">
           <li class="flex-1">
                 <router-link to="/about" class="px-5 py-3 w-full block rounded-lg transition ease-in-out delay-150" exact-active-class="bg-button-active">Classes</router-link>
               </li>

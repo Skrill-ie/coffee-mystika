@@ -25,11 +25,11 @@
             <div class="grid grid-cols-1 grid-rows-2 divide-y divide-[#FDECD8] bg-black-secondary w-full font-radley h-fit pl-10 pr-10 pb-10">
               <div class="text-base text-text-title text-left pt-10">Newsletter</div>
               <div class="pt-5 grid grid-cols-2 gap-4 h-20">
-                <input type="text" id="fname" name="fname" placeholder="First Name" style="color: #FDECD8" class="w-full border-solid border-2 bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
-                <input type="text" id="fname" name="lname" placeholder="Last Name" style="color: #FDECD8" class="w-full border-solid border-2 bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
+                <input type="text" id="fname" name="fname" placeholder="First Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
+                <input type="text" id="fname" name="lname" placeholder="Last Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
               </div>
               <div>
-                <input type="text" id="email" name="email" placeholder="Email" style="color: #FDECD8" class="w-full border-solid border-2 bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
+                <input type="text" id="email" name="email" placeholder="Email" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
               </div>
               <div class="pt-4">
                 <button class="px-5 py-3 w-full block rounded-lg bg-button-active">Subscribe</button>
@@ -39,9 +39,9 @@
             <div class="grid grid-cols-1 grid-rows-2 divide-y divide-[#FDECD8] bg-black-secondary w-full font-radley h-[15rem] pl-10 pr-10 pb-10">
               <div class="text-base text-text-title text-left pt-10">Follow Us</div>
               <div class="pt-5 grid justify-items-center grid-cols-3 h-20 w-full">
-                <div class="size-16"><img src="../assets/images/blog/icons/facebook_mystika_5968764.png"></div>
-                <div class="size-16"><img src="../assets/images/blog/icons/instagram_mystika_1384015.png"></div>
-                <div class="size-16"><img src="../assets/images/blog/icons/social_mystika_15707814.png"></div>
+                <a href="https://www.facebook.com/CafeMystika" target="_blank"><div class="size-16"><img src="../assets/images/blog/icons/facebook_mystika_5968764.png"></div></a>
+                <a href="https://www.instagram.com/cafemystika/" target="_blank"><div class="size-16"><img src="../assets/images/blog/icons/instagram_mystika_1384015.png"></div></a>
+                <a href="https://www.youtube.com/c/ThePinoyDrinker" target="_blank"><div class="size-16"><img src="../assets/images/blog/icons/social_mystika_15707814.png"></div></a>
               </div>
             </div>
           </div>

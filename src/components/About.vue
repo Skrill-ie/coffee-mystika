@@ -144,7 +144,7 @@
           baristaOccupation: "Mountain Origin",
         },
       },
-      heroImage: (require('@/assets/images/HeroBackground.png')),
+      heroImage: (require('@/assets/images/herobackground2.png')),
       mainText: "Meet the Dream Team",
       subText: "Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers"
     };

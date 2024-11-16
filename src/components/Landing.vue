@@ -83,34 +83,62 @@
       </ul>
     </div>
   </div>
-  <div class="h-screen bg-black-secondary justify-items-center"><!--Seventh Section-->
+  <div class="h-full bg-black-secondary justify-items-center pb-32"><!--Seventh Section-->
     <h1 class="text-xl text-text-title pb-10 pt-32 w-full font-radley">A little taste of the tutorial drinks<br> we've crafted just for you!</h1>
-    <div class="grid grid-cols-2 container relative">
-      <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId"
-              class="justify-self-end"
-              width="500"
-              height="889"
-              style="border:none;overflow:hidden"
-              scrolling="no" frameborder="0" allowfullscreen="true"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-      </iframe>
-      <div class="bg-black-primary w-2/3 justify-self-start">
-        <h1 class="text-left text-base text-text-title font-radley m-8">RECIPE below <br><br>Our student barista is here! Let's watch @Adingdingding as she makes a mocktail that you could try!</h1>
-        <p class="text-left text-sm text-text-paragraph h-96 font-radley mt-10 m-8 overflow-auto"> 
-            Our student barista is here! Let's watch Nicole Paulo as she makes a mocktail that you could try!<br><br>
-            15 ml Monin Orgeat Syrup<br>
-            15 ml Elderflower Syrup<br>
-            3 drops saline<br>
-            15 ml lemon juice<br>
-            60 ml green tea<br>
+    <div class="grid grid-cols-2 gap-4 w-10/12">
+      <div class="grid grid-cols-2">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId"
+                class="justify-self-end"
+                width="500"
+                height="889"
+                style="border:none;overflow:hidden"
+                scrolling="no" frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+        <div class="bg-black-primary w-full justify-self-start container relative overflow-auto">
+          <h1 class="text-left text-base text-text-title font-radley m-8">RECIPE below <br><br>Our student barista is here! Let's watch @Adingdingding as she makes a mocktail that you could try!</h1>
+          <p class="text-left text-sm text-text-paragraph h-96 font-radley mt-10 m-8"> 
+              Our student barista is here! Let's watch Nicole Paulo as she makes a mocktail that you could try!<br><br>
+              15 ml Monin Orgeat Syrup<br>
+              15 ml Elderflower Syrup<br>
+              3 drops saline<br>
+              15 ml lemon juice<br>
+              60 ml green tea<br>
+              ENJOY DISCOUNTS + OFFERS!<br>
+              KOFIL Yanyan DGTE and Dipolog<br>
+              GRANDE Bakeworld Davao and Tagum<br>
+              Use Code: TPDANGELO<br><br>
+              Try this recipe and visit Cafe Mystika for our curated drinks!<br>
+          </p>
+          <a href="https://www.facebook.com/CafeMystika/videos" target="_blank"><button class="text-sm text-text-paragraph font-radley bg-button-active px-5 py-3 w-full block rounded-lg" exact-active-class="bg-button-active">See more</button></a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F1275775460059323&width=500&show_text=false&height=889&appId"
+                class="justify-self-end"
+                width="500"
+                height="889"
+                style="border:none;overflow:hidden"
+                scrolling="no" frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+        <div class="bg-black-primary w-full justify-self-start container relative  overflow-auto">
+          <h1 class="text-left text-base text-text-title font-radley m-8">@sayresven is here again guys! Brewing some goodness for us using our @gourmetfarmsph Plunger and Mt.Apo Kapelipinas here at @cafemystika</h1>
+          <p class="text-left text-sm text-text-paragraph h-96 font-radley mt-10 m-8"> 
+            Sven is here again guys! Brewing some goodness for us using our Gourmet Farms Plunger and Mt.Apo Kapelipinas here at the cafe ❤️<br><br>
             ENJOY DISCOUNTS + OFFERS!<br>
             KOFIL Yanyan DGTE and Dipolog<br>
-            GRANDE Bakeworld Davao and Tagum<br>
-            Use Code: TPDANGELO<br><br>
-            Try this recipe and visit Cafe Mystika for our curated drinks!<br>
-        </p>
+            GRANDE Bakeworld Davao<br>
+            Use Code: TPDANGELO<br>
+            You may finish the video for the whole recipe!<br>
+            If you wanna try this, please do come here at the cafe!<br><br>
+            #fyp #foryoupage #foryou #thepinoydrinker #cafemystika #frenchpress
+          </p>
+          <a href="https://www.facebook.com/CafeMystika/videos" target="_blank"><button class="text-sm text-text-paragraph font-radley bg-button-active px-5 py-3 w-full block rounded-lg" exact-active-class="bg-button-active">See more</button></a>
+        </div>
       </div>
     </div>
+    
   </div>
 </template>
 

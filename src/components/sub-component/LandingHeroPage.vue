@@ -5,7 +5,7 @@
                 <div class="absolute bottom-[23vh] left-0 w-full justify-items-center font-radley">
                     <div class="justify-items-center"><img :src="IconImage"></div>
                     <h1 class="text-xl text-text-title pb-10 pt-14 w-full">{{ mainText }}</h1>
-                    <div class="text-base text-text-title w-full border-b-2 pb-10">{{ subText }}</div>
+                    <div class="text-base text-text-title w-full border-b-2 border-[#F9DBB7] pb-10">{{ subText }}</div>
                 </div>  
             </div>
         </div>

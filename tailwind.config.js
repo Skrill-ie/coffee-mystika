@@ -6,10 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'transition-left':{
+          '0%, 10%':{ transform: 'translateX(0)'},
+          '100%':{ transform: 'translateX(-400px)'}
+        }
+      },
+      animation: {
+        'transition-left': 'transition-left 0.5s ease-in-out'
+      },
       colors:{
         black:{
           primary: '#242424',
-          secondary:'#171717'
+          secondary:'#1F1F1F'
         },
         text:{
           title:'#F9DBB7',
@@ -38,6 +47,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate"),
+  ],
 }
 

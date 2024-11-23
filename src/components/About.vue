@@ -43,7 +43,7 @@
       </div>
       <div class="bg-fixed py-10" :style="{ backgroundImage: `url(${require('@/assets/images/Background.png')})` }">
         <div class="text-5xl mb-10 font-radley text-text-title">We Craft Tasty Moments to <br> Remember</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between gap-5 px-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between gap-5 px-10 md:px-20">
           <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/drying.png">
             <p class="mt-10 text-lg text-text-title font-radley">Drying the Beans</p>
@@ -67,7 +67,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 container mx-auto justify-between gap-10 px-5">
           <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 mx-auto w-3/4 md:w-full relative bg-center"
                :style="{ backgroundImage: `url(${barista.baristaImage})` }">
-            <div class=" lg:-mt-14 px-5 z-20 absolute -bottom-5 left-0 w-full">
+            <div class=" lg:-mt-14 px-5 z-10 absolute -bottom-5 left-0 w-full">
               <div class="bg-black-secondary py-3 font-radley shadow">
                 <h2 class="text-text-title text-lg">{{ barista.baristaName }}</h2>
                 <p class="text-text-paragraph mb-3">Gen. {{ barista.baristaGen }} Barista</p>
@@ -78,18 +78,18 @@
         </div>
       </div>
       <div class="md:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10 px-5  container mx-auto items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
           <div class="px-5 md:px-0 md:text-left md:w-80 mx-auto order-2 md:order-1">
             <p class="text-5xl mb-10 text-text-title">Vision</p>
             <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
             <p class="text-5xl my-10 text-text-title">Mission</p>
             <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
           </div>
-          <div class="flex gap-5 order-1 md:order-2 h-4/5">
+          <div class="flex md:gap-5 order-1 md:order-2 h-4/5">
             <div class="w-3/5">
               <img src="../assets/images/image-3.png" alt="Latte Art" class="w-full h-full object-cover">
             </div>
-            <div class="w-1/3 flex flex-col gap-5">
+            <div class="w-2/3 md:w-1/3 flex flex-col md:gap-5">
               <div class="h-2/3">
                 <img src="../assets/images/image-5.png" alt="Coffee Beans" class="w-full h-full object-cover">
               </div>

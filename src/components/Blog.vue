@@ -32,7 +32,7 @@
                 <input type="text" id="email" name="email" placeholder="Email" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
               </div>
               <div class="pt-4">
-                <button class="px-5 py-3 w-full block rounded-lg bg-button-active">Subscribe</button>
+                <button class="px-5 py-3 w-full block rounded-lg bg-button-active hover:bg-orange-400 transition">Subscribe</button>
               </div>
             </div>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-24 md:mt-40">
+    <div class="mt-24 md:mt-30">
       <div class="py-20 container mx-auto px-5 md:px-10">
         <p class="text-5xl mb-10 font-radley text-text-title ">Have a Word with Us</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
@@ -47,7 +47,7 @@
                   </div>
                 </div>
               </div>
-              <button class="mt-6 bg-button-active w-full py-4 text-text-paragraph rounded-md"> Message Us </button>
+              <button class="mt-6 bg-button-active hover:bg-orange-400 transition w-full py-4 text-text-paragraph rounded-md"> Message Us </button>
             </div>
           </div>
           <div class="w-full xl:w-3/4 mx-auto py-0 md:py-10 font-radley order-1 lg:order-2">

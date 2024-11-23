@@ -8,7 +8,7 @@
   <!-- overlay for modal -->
   <div
       v-if="openModal"
-      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-30"
+      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-all duration-300 z-30"
       @click="toggleModal"
   ></div>
   <SocialIcons/>

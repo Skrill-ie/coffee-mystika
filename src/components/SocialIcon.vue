@@ -8,7 +8,7 @@
 
       <div
         :class="[
-        'fixed bottom-4 right-4 bg-stone-900 my-5 text-white rounded-lg shadow-lg transition-transform duration-300 w-1/4 z-20',
+        'fixed bottom-4 right-4 bg-stone-900 my-5 text-white rounded-lg shadow-lg transition-transform duration-300 w-11/12 sm:w-5/6 lg:w-1/4 z-20',
         isSocialsOpen ? 'translate-x-0' : 'translate-x-full'
       ]">
         <div class="flex mx-5 my-3 pl-5 space-x-5">

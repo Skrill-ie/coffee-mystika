@@ -1,21 +1,30 @@
 <template>
-  <div v-if="isOpen" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div class="bg-black-secondary rounded-lg shadow-lg max-w-lg max-h-screen h-3/4 w-full z-10">
-      <div class="grid grid-rows-3 grid-flow-col gap-4 h-full">
-        <div class="row-span-3 ..."><div class="bg-cover h-full w-full" :style="{ backgroundImage: `url(${image1})` }"></div></div>
-        <div class="col-span-2 ...">02</div>
-        <div class="row-span-2 col-span-2 ...">
-            03
+  <div v-if="isOpen" :class="[
+        'fixed inset-0 flex items-center justify-center z-50',
+        modalBackgroundClass
+      ]">
+    <div class="bg-black-secondary rounded-lg shadow-lg max-w-3xl w-full z-10">
+      <div class="grid grid-cols-2">
+        <div class="col-span-2 relative md:col-span-1 h-48 bg-center md:h-full md:w-full bg-no-repeat bg-cover" :style="{ backgroundImage: `url(${imageFeatured})` }">
+          <div class="md:hidden absolute inset-x-0 bottom-0 block text-4xl font-radley text-text-paragraph capitalize bg-gradient-to-b from-transparent to-black-secondary py-2">
+            {{ currentPageType }} Coming Soon
+          </div>
+        </div>
+        <div class="col-span-2 md:col-span-1 md:text-left px-5 py-0 pb-10 md:py-20">
+          <div class="hidden md:block text-4xl font-radley text-text-paragraph mb-4 capitalize">{{ currentPageType }} Coming Soon</div>
+          <div class="py-10">
+            <span v-if="currentPageType === 'shop'" >Exciting things are on the way! Our shop is coming soon—stay tuned!</span>
+            <span v-else> Get ready—our class is launching soon! Stay tuned for updates!</span>
+          </div>
+          <button @click="$emit('close')" class="px-4 py-2 bg-button-active rounded-md hover:bg-orange-400 transition w-full">
+            Close
+          </button>
         </div>
       </div>
-      <h4 class="text-2xl font-radley font-bold mb-4 capitalize">{{ currentPageType }} Coming Soon</h4>
       <div class="flex justify-end space-x-2">
-        <button @click="$emit('close')" class="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 transition w-full">
-          Close
-        </button>
+
       </div>
     </div>
-    <div v-if="isOpen" class="h-full w-full bg-black-secondary absolute bg-opacity-50"></div>
   </div>
 </template>
 
@@ -34,13 +43,29 @@ export default {
   },
   data() {
     return {
-      // featuredMerch:{
-        image1:(require('@/assets/images/merch.png')),
-        // image2:(require('@/assets/images/baristas/merch2.JPG')),
-        // image3:(require('@/assets/images/baristas/merc3.JPG')),
-        // image4:(require('@/assets/images/baristas/merch4.JPG')),
-      // },
+      imageMerch:(require('@/assets/images/merch.png')),
+      imageClass:(require('@/assets/images/image.png')),
+      imageFeatured:"",
+      modalBackgroundClass: 'bg-black bg-opacity-0', // Initial background (transparent),
     }
+  },
+  watch : {
+    currentPageType(newVal) {
+      if  (newVal === "shop") {
+        this.imageFeatured = this.imageMerch;
+      } else {
+        this.imageFeatured = this.imageClass;
+      }
+    },
+    openModal(newVal) {
+      if (newVal) {
+        // When the modal opens, animate to full opacity
+        this.modalBackgroundClass = 'bg-black bg-opacity-50 transition-opacity duration-500';
+      } else {
+        // When the modal closes, reset background to transparent
+        this.modalBackgroundClass = 'bg-black bg-opacity-0 transition-opacity duration-500';
+      }
+    },
   },
 };
 </script>

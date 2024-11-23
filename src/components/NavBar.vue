@@ -8,7 +8,7 @@
       </div>
     </div>
     <!--  main nav  -->
-    <nav class="py-6 px-5 md:px-10 lg:px-5 bg-black-secondary bg-opacity-65 text-white font-radley">
+    <nav :class="navbarClass" class="py-6 px-5 md:px-10 lg:px-5 bg-black-secondary text-white font-radley transition-all duration-300">
       <div class="container mx-auto justify-between flex items-center">
         <!--   Main Logo    -->
         <router-link to="/"><img src="../assets/icons/cafe-mystika-icon.png"></router-link>
@@ -92,6 +92,8 @@ export default {
     return {
       isModalOpen: false,
       currentPageType:null,
+      scrollY: 0, // Scroll position
+      scrollLimit: 100,
     };
   },
   props: {
@@ -104,7 +106,19 @@ export default {
       required: true,
     },
   },
+  computed: {
+    navbarClass() {
+      const opacity = Math.min(this.scrollY / this.scrollLimit, 1);
+      return {
+        'bg-transparent': opacity === 0,
+        'bg-opacity-100': opacity > 0,
+      };
+    },
+  },
   methods: {
+    handleScroll() {
+      this.scrollY = window.scrollY;
+    },
     toggleSidebar() {
       this.$emit('toggle-sidebar');
     },
@@ -112,6 +126,14 @@ export default {
       this.currentPageType = currentPageType;
       this.$emit('toggle-modal');
     },
-  }
+  },
+  mounted() {
+    // Add scroll event listener when component is mounted
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    // Remove scroll event listener when component is destroyed
+    window.removeEventListener('scroll', this.handleScroll);
+  },
 };
 </script>

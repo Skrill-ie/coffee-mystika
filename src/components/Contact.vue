@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-24 md:mt-30">
+    <div class="mt-40">
       <div class="py-20 container mx-auto px-5 md:px-10">
         <p class="text-5xl mb-10 font-radley text-text-title ">Have a Word with Us</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
@@ -31,19 +31,19 @@
                            placeholder="First Name"
                            id="first-name"
                            autocomplete="given-name"
-                           class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
+                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
                   </div>
                 </div>
                 <div class="sm:col-span-3">
                   <div class="mt-2">
                     <input type="text" name="last-name" placeholder="Last Name" id="last-name" autocomplete="last-name"
-                           class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
+                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
                   </div>
                 </div>
                 <div class="sm:col-span-6">
                   <div class="mt-2">
                     <input type="email" name="email" placeholder="Email Adress" id="email" autocomplete="email"
-                           class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
+                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
                   </div>
                 </div>
               </div>

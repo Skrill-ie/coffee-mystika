@@ -1,8 +1,8 @@
 <template>
-    <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden text-sm">
       <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
-      <div class="md:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
+      <div class="lg:h-screen flex items-center justify-center bg-black-secondary font-radley">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
           <div class="flex md:gap-5 h-4/5">
             <div class="w-2/3 flex flex-col md:gap-5">
               <div class="h-2/3">
@@ -16,7 +16,7 @@
               <img src="../assets/images/image-1.png" alt="Latte Art" class="w-full h-full object-cover">
             </div>
           </div>
-          <div class="text-left lg:w-96 mx-auto px-4 md:px-0">
+          <div class="text-left lg:w-96 mx-auto px-4 md:px-0 ">
             <p class="text-center md:text-left text-5xl mb-10 text-text-title">A History of <br>Cafe Mystika</p>
             <p class="text-center md:text-left text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </p>
           </div>
@@ -77,15 +77,19 @@
           </div>
         </div>
       </div>
-      <div class="md:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
-          <div class="px-5 md:px-0 md:text-left md:w-80 mx-auto order-2 md:order-1">
-            <p class="text-5xl mb-10 text-text-title">Vision</p>
-            <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
-            <p class="text-5xl my-10 text-text-title">Mission</p>
-            <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
+      <div class="lg:h-screen flex items-center justify-center bg-black-secondary font-radley">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
+          <div class="px-5 md:px-0 md:text-left lg:w-80 mx-auto order-2 lg:order-1 md:flex lg:block gap-x-16">
+            <div>
+              <p class="text-5xl mb-10 text-text-title">Vision</p>
+              <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
+            </div>
+            <div>
+              <p class="text-5xl my-10 md:mb-10 lg:my-10 text-text-title">Mission</p>
+              <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
+            </div>
           </div>
-          <div class="flex md:gap-5 order-1 md:order-2 h-4/5">
+          <div class="flex md:gap-5 order-1 lg:order-2 h-4/5">
             <div class="w-3/5">
               <img src="../assets/images/image-3.png" alt="Latte Art" class="w-full h-full object-cover">
             </div>

@@ -3,7 +3,7 @@
       <button @click="toggleSocials"
               :class="['fixed bottom-4 right-0 w-24 h-24 m-3 mr-0 bg-text-title shine-effect z-30 transition-all duration-500 ease-in-out drop-shadow-lg overflow-hidden',
               isSocialsOpen ? 'rounded-full':'rounded-l-full']">
-        <img src="../assets/images/angelo.jpg">
+        <img src="../../assets/images/angelo.jpg">
       </button>
 
       <div
@@ -12,9 +12,9 @@
         isSocialsOpen ? 'translate-x-0' : 'translate-x-full'
       ]">
         <div class="flex mx-5 my-3 pl-5 space-x-5">
-          <div><a target="_blank" :href="socialInstagram"><img class="w-14" src="../assets/icons/instagram.png"></a></div>
-          <div><a target="_blank" :href="socialYoutube"><img class="w-14" src="../assets/icons/youtube.png"></a></div>
-          <div><a target="_blank" :href="socialFacebook"><img class="w-14" src="../assets/icons/facebook.png"></a></div>
+          <div><a target="_blank" :href="socialInstagram"><img class="w-14" src="../../assets/icons/instagram.png"></a></div>
+          <div><a target="_blank" :href="socialYoutube"><img class="w-14" src="../../assets/icons/youtube.png"></a></div>
+          <div><a target="_blank" :href="socialFacebook"><img class="w-14" src="../../assets/icons/facebook.png"></a></div>
         </div>
     </div>
     </div>

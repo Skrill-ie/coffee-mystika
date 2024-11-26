@@ -4,21 +4,21 @@
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-x-20 container mx-auto md:py-10">
                 <div class="col-span-4 md:col-span-2 xl:col-span-4 px-5 border-b-2 xl:border-none border-black-secondary">
                     <div class="flex items-center justify-center md:justify-items-start xl:mb-10">
-                        <div class="pr-8"><img src="../assets/icons/cafe-mystika-icon-2.png"></div>
-                        <div><img src="../assets/icons/cafe-mystika-word.png"></div>
+                        <div class="pr-8"><img src="../../assets/icons/cafe-mystika-icon-2.png"></div>
+                        <div><img src="../../assets/icons/cafe-mystika-word.png"></div>
                     </div>
                     <p class="xl:text-left text-text-paragraph py-10 max-w-md mx-auto">Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers</p>
                 </div>
-                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-3 md:order-2 px-5 lg:px-10 py-10 xl:py-0">
+                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-3 md:order-2 pl-10 lg:px-10 py-10 xl:py-0">
                     <div class="text-3xl mb-10 text-left text-text-title">Contact Us</div >
                     <ul class="text-text-paragraph ">
-                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../assets/icons/Vector.png" alt=""> Valencia, Negros Oriental</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../assets/icons/Vector-2.png" alt="">Help@mystika.com</span></li>
-                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-1.png" alt="">10:00 am - 11:00 pm</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector.png" alt=""> Valencia, Negros Oriental</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-2.png" alt="">Help@mystika.com</span></li>
+                        <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
                     </ul>
                 </div>
-                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-2 md:order-3 px-5 py-10 xl:py-0">
+                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-2 md:order-3 pr-10 lg:px-10 py-10 xl:py-0">
                     <div class="text-3xl mb-10 text-text-title text-left px-5 xl:px-0">We're Here</div>
                     <div class="flex xl:justify-center ">
                         <iframe 

@@ -21,9 +21,9 @@
 </template>
 
 <script>
-import NavAppBar from './components/NavBar.vue'; // Import the Navbar component
-import AppFooter from './components/Footer.vue'; // Import the Footer component
-import SocialIcons from './components/SocialIcon.vue'; // Import the Footer component
+import NavAppBar from './components/sub-component/NavBar.vue'; // Import the Navbar component
+import AppFooter from './components/sub-component/Footer.vue'; // Import the Footer component
+import SocialIcons from './components/sub-component/SocialIcon.vue'; // Import the Footer component
 
  
 export default {

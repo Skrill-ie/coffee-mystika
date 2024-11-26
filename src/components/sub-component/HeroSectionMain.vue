@@ -1,12 +1,16 @@
 <template>
-    <div class="h-screen bg-cover bg-center bg-fixed" :style="{ backgroundImage: `url(${heroImage})` }">
+    <div class="h-screen bg-cover bg-right-bottom md:bg-center bg-fixed" :style="{ backgroundImage: `url(${heroImage})` }">
         <div class="bg-blackOverlay">
-            <div class="container mx-auto relative h-screen">
-                <div class="absolute bottom-[17vh] left-0 text-left font-radley">
-                    <h1 class="text-xl text-text-title">{{ mainText }}</h1>
-                    <div class="text-base text-text-title w-1/2">{{ subText }}</div>
-                    <p class="text-mid text-text-paragraph pt-7" v-if="paragraphText">{{ paragraphText }}</p>
-                </div>  
+            <div class="container mx-auto h-screen pb-10 px-10">
+              <div class="relative h-full">
+                <div class="md:text-left absolute inset-x-0 bottom-0 font-radley">
+                    <div class="text-5xl lg:text-xl text-text-title">{{ mainText }}</div>
+                    <div class="text-sm text-text-paragraph w-full md:w-1/2 ">
+                      <p class="mb-10">{{ subText }}</p>
+                      <p class="" v-if="paragraphText">{{ paragraphText }}</p>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </div>

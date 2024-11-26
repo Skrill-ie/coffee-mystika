@@ -1,12 +1,12 @@
 <template>
-  <div v-if="isOpen" :class="[
+  <div v-if="openModal" :class="[
         'fixed inset-0 flex items-center justify-center z-50',
         modalBackgroundClass
       ]">
     <div class="bg-black-secondary rounded-lg shadow-lg max-w-3xl w-full z-10">
       <div class="grid grid-cols-2">
         <div class="col-span-2 relative md:col-span-1 h-48 bg-center md:h-full md:w-full bg-no-repeat bg-cover" :style="{ backgroundImage: `url(${imageFeatured})` }">
-          <div class="md:hidden absolute inset-x-0 bottom-0 block text-4xl font-radley text-text-paragraph capitalize bg-gradient-to-b from-transparent to-black-secondary py-2">
+          <div class="md:hidden absolute inset-x-0 bottom-0 block text-4xl font-radley text-text-paragraph capitalize bg-opacity-50 bg-black-secondary py-2">
             {{ currentPageType }} Coming Soon
           </div>
         </div>
@@ -32,7 +32,7 @@
 export default {
   name: 'ModalComponent',
   props: {
-    isOpen: {
+    openModal: {
       type: Boolean,
       required: true, // The parent must pass this prop
     },

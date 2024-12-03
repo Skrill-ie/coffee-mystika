@@ -121,10 +121,12 @@ export default {
     },
     toggleSidebar() {
       this.$emit('toggle-sidebar');
+
     },
     toggleModal(currentPageType) {
       this.currentPageType = currentPageType;
       this.$emit('toggle-modal');
+
     },
   },
   mounted() {

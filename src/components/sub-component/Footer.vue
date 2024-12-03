@@ -18,7 +18,7 @@
                         <li class="mb-3"><span class="inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-3.png" alt="">+639 - 0000 - 000</span></li>
                     </ul>
                 </div>
-                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-2 md:order-3 pr-10 lg:px-10 py-10 xl:py-0">
+                <div class="col-span-4 md:col-span-1 xl:col-span-4 order-2 md:order-3 xl:pr-10 lg:px-10 py-10 xl:py-0">
                     <div class="text-3xl mb-10 text-text-title text-left px-5 xl:px-0">We're Here</div>
                     <div class="flex xl:justify-center ">
                         <iframe 

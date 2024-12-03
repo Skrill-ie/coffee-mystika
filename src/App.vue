@@ -42,10 +42,26 @@ export default {
   methods: {
     toggleSidebar() {
       this.openSidebar = !this.openSidebar;
+      if(this.openSidebar)
+        this.preventBodyScroll(true);
+      else
+        this.preventBodyScroll(false);
     },
     toggleModal(){
       this.openModal = !this.openModal;
-    }
+      if(this.openModal)
+        this.preventBodyScroll(true);
+      else
+        this.preventBodyScroll(false);
+    },
+    preventBodyScroll(disable) {
+      const body = document.body;
+      if (disable) {
+        body.style.overflow = "hidden"; // Disable scrolling
+      } else {
+        body.style.overflow = ""; // Reset overflow to default
+      }
+    },
   },
 }
 </script>

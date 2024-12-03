@@ -3,21 +3,21 @@
       <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText" :paragraphText="paragraphText"/>
     </div>
     <div class="container py-20 mx-auto pb-10">
-      <div class="grid gap-14 grid-cols-3">
-        <div class="w-full max-w-5xl col-span-2"> <!--divide section 1-->
-          <ul class="grid gap-10 grid-cols-2 grid-rows-2">
+      <div class="grid gap-5 xl:gap-14 lg:grid-cols-3">
+        <div class="w-full max-w-5xl lg:col-span-2 px-5 lg:pl-10"> <!--divide section 1-->
+          <ul class="grid gap-5 lg:gap-10 grid-cols-2 grid-rows-2">
             <li v-for="(blog, index) in blogs" :key="'blog'+index">
               <div @click="toggleBlogModal(blog)">
                 <div><img :src="blog.blogImage" class="size-full"></div>
-                <div class="text-2xl text-text-paragraph font-radley text-left pt-4">{{ blog.title }}</div>
-                <div class="text-sm text-right text-gray-500 font-radley pt-7">{{ blog.date }}</div>
+                <div class="text-lg lg:text-2xl text-text-paragraph font-radley text-left pt-4 text-ellipsis">{{ blog.title }}</div>
+                <div class="text-xs lg:text-sm text-right text-gray-500 font-radley pt-7">{{ blog.date }}</div>
               </div>
             </li>
           </ul>
         </div>
-        <div class=""> <!--divide section 2-->
-          <div class="text-sm sticky top-36">
-            <div class=" bg-black-secondary w-full font-radley pl-10 pr-10 pb-10">
+        <div class="lg:col-span-1"> <!--divide section 2-->
+          <div class="text-sm lg:sticky lg:top-36">
+            <div class=" bg-black-secondary w-full font-radley px-5 lg:px-10 pb-10">
               <div class="pt-10 text-center lg:text-start">
                 <p class="text-4xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
                 <p class="w-3/4 lg:w-full mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-  <BlogModal :showBlogModal="showBlogModal" :currentBlog="currentBlog"  @close="toggleBlogModal" />
+  <BlogModal :showBlogModal="showBlogModal" :currentBlog="currentBlog"  @close-blog-modal="closeBlogModal" />
   </template>
   
   <script>
@@ -69,10 +69,20 @@
       toggleBlogModal(blog) {
         this.currentBlog = blog;
         this.showBlogModal = true;
+        this.preventBodyScroll(true);
       },
       closeBlogModal() {
         this.currentBlog = {};
         this.showBlogModal = false;
+        this.preventBodyScroll(false);
+      },
+      preventBodyScroll(disable) {
+        const body = document.body;
+        if (disable) {
+          body.style.overflow = "hidden"; // Disable scrolling
+        } else {
+          body.style.overflow = ""; // Reset overflow to default
+        }
       },
     }
   };

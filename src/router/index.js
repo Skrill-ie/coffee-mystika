@@ -1,5 +1,5 @@
 // add all import components
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import LandingPage from '../components/Landing.vue';
 import AboutUs from '../components/About.vue';
 import ContactUs from '../components/Contact.vue';
@@ -12,7 +12,9 @@ export { default as LandingPage } from '../components/Landing.vue';
 
 
 //routes
-const routes = [
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: [
   {
     path: '/',
     name: 'Home',
@@ -33,12 +35,13 @@ const routes = [
     name: 'Blog',
     component: BlogPage, // Route to Contact component
   },
-];
-
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
+],
 });
+
+// const router = createRouter({
+//   history: createWebHistory(process.env.BASE_URL),
+//   routes,
+// });
 
 
 export {  AboutUs, ContactUs };

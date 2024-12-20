@@ -2,7 +2,7 @@
   <!-- overlay for sidebar -->
   <div
       v-if="openSidebar"
-      class="fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-20"
+      class="block lg:hidden fixed inset-0 bg-black-secondary bg-opacity-50 backdrop-blur-sm transition-opacity duration-300 z-20"
       @click="toggleSidebar"
   ></div>
   <!-- overlay for modal -->
@@ -39,6 +39,8 @@ export default {
       openModal:false,
     };
   },
+
+
   methods: {
     toggleSidebar() {
       this.openSidebar = !this.openSidebar;

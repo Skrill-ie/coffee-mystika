@@ -2,7 +2,7 @@
     <div class="overflow-x-hidden text-sm">
       <HeroSectionMain :heroImage="heroImage" :mainText="mainText" :subText="subText"/>
       <div class="lg:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-3">
           <div class="flex md:gap-5 h-4/5">
             <div class="w-2/3 flex flex-col md:gap-5">
               <div class="h-2/3">
@@ -43,7 +43,7 @@
       </div>
       <div class="bg-fixed py-10" :style="{ backgroundImage: `url(${require('@/assets/images/Background.png')})` }">
         <div class="text-5xl mb-10 font-radley text-text-title">We Craft Tasty Moments to <br> Remember</div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between gap-5 px-10 md:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto justify-between gap-5 px-3 md:px-20">
           <div class="h-60 w-full lg:w-60 bg-black-primary p-8 flex flex-col justify-center">
             <img class="mx-auto w-16 h-16" src="../assets/icons/drying.png">
             <p class="mt-10 text-lg text-text-title font-radley">Drying the Beans</p>
@@ -65,7 +65,7 @@
       <div class="bg-black-primary py-20">
         <div class="text-5xl mb-10 font-radley text-text-title">Get to Know our Friendly <br> Baristas</div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 container mx-auto justify-between gap-10 px-5">
-          <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 mx-auto w-3/4 md:w-full relative bg-center"
+          <div v-for="(barista, key) in baristaDetail" :key="key" class="h-96 mx-auto w-full sm:w-3/4 md:w-full relative bg-center"
                :style="{ backgroundImage: `url(${barista.baristaImage})` }">
             <div class=" lg:-mt-14 px-5 z-10 absolute -bottom-5 left-0 w-full">
               <div class="bg-black-secondary py-3 font-radley shadow">
@@ -77,19 +77,34 @@
           </div>
         </div>
       </div>
-      <div class="lg:h-screen flex items-center justify-center bg-black-secondary font-radley">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-10">
+      <div class="flex items-center justify-center bg-black-secondary font-radley">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 pb-10 md:py-10 container mx-auto items-center px-3">
           <div class="px-5 md:px-0 md:text-left lg:w-80 mx-auto order-2 lg:order-1 md:flex lg:block gap-x-16">
             <div>
               <p class="text-5xl mb-10 text-text-title">Vision</p>
               <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
             </div>
+          </div>
+          <div class="flex md:gap-5 order-1 lg:order-2 h-4/5">
+            <div class="w-3/5">
+              <img src="../assets/images/image-3.png" alt="Latte Art" class="w-full h-full object-cover">
+            </div>
+            <div class="w-2/3 md:w-1/3 flex flex-col md:gap-5">
+              <div class="h-2/3">
+                <img src="../assets/images/image-5.png" alt="Coffee Beans" class="w-full h-full object-cover">
+              </div>
+              <div class="h-1/3 overflow-hidden">
+                <img src="../assets/images/image-6.png" alt="Barista Side View" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+          <div class="mt-10 px-5 md:px-0 md:text-left lg:w-80 mx-auto order-4 lg:order-4 md:flex lg:block gap-x-16">
             <div>
-              <p class="text-5xl my-10 md:mb-10 lg:my-10 text-text-title">Mission</p>
+              <p class="text-5xl mb-10 md:mb-10 lg:my-10 text-text-title">Mission</p>
               <span class="text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula. Litora nulla ante ut justo curae iaculis dapibus urna torquent. Cubilia odio enim felis class vitae velit magnis ridiculus. </span>
             </div>
           </div>
-          <div class="flex md:gap-5 order-1 lg:order-2 h-4/5">
+          <div class="lg:flex md:gap-5 order-3 lg:order-3 h-4/5 hidden">
             <div class="w-3/5">
               <img src="../assets/images/image-3.png" alt="Latte Art" class="w-full h-full object-cover">
             </div>

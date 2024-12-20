@@ -33,15 +33,10 @@ const router = createRouter({
   {
     path: '/blog',
     name: 'Blog',
-    component: BlogPage, // Route to Contact component
+    component: BlogPage, // Route to Blog component
   },
 ],
 });
-
-// const router = createRouter({
-//   history: createWebHistory(process.env.BASE_URL),
-//   routes,
-// });
 
 
 export {  AboutUs, ContactUs };

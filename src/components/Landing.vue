@@ -4,138 +4,84 @@
       <LandingHeroPage :heroImage="heroImage" :IconImage="IconImage" :mainText="mainText" :subText="subText"/>
     </div>
   </div>
-  <div class="h-[45rem] bg-black-primary justify-items-center"><!--Second Section-->
-    <h1 class="text-xl text-text-title pb-10 pt-14 w-full font-radley">Our customer's favorite</h1>
-    <div class="w-full max-w-5xl col-span-3">
-      <ul class="grid gap-16 grid-cols-3">
-        <li v-for="(fav, index) in customerFav" :key="'fav'+index">
-          <div class="pt-7">
-            <div><img :src="fav.customerFavImage" class="size-full"></div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="h-screen bg-black-secondary justify-items-center"><!--Third Section-->
-    <div class="grid grid-rows-4 grid-flow-col gap-y-4 gap-x-24 pt-[18.5vh] container relative font-radley">
-      <div class="row-span-4 col-span-4"><img class="md:size-auto" src="../assets/images/landing/sec3image.png"></div>
-      <div class="row-span-2 col-span-2 text-left text-xl text-text-title leading-[6rem] pt-20">Coffee and Science come together, warmly brewed.</div>
-      <div class="row-span-2 col-span-2 text-left text-mid text-text-paragraph pt-10">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+  <div class="md:h-screen bg-black-secondary justify-items-center"><!--Third Section-->
+    <div class="grid grid-cols-2 gap-5 md:gap-10  container font-radley w-full m-auto items-center h-full">
+      <div class="col-span-2 md:col-span-1 h-52 md:h-4/5 bg-center bg-fixed lg:bg-local bg-no-repeat" :style="{ backgroundImage: `url(${require('../assets/images/landing/sec3image.png')})` }"></div>
+      <div class="col-span-2 md:col-span-1 text-left px-3 py-10 lg:py-0 mx-auto lg:w-96">
+        <div class="text-center md:text-left text-4xl md:text-5xl mb-10 text-text-title">Coffee and Science come together, warmly brewed.</div>
+        <div class="text-center md:text-left text-text-paragraph text-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+      </div>
     </div>
   </div>
   <div class="h-full bg-black-primary justify-items-center"><!--Fourth Section-->
-    <div class="grid grid-flow-col gap-4 pt-10 pb-10 container relative font-radley">
+    <div class="grid grid-flow-col relative container font-radley">
       <div><img class="size-full" src="../assets/images/landing/sec4image.png"></div>
       <div><img class="size-full" src="../assets/images/landing/sec4image2.png"></div>
       <div><img class="size-full" src="../assets/images/landing/sec4image3.png"></div>
     </div>
   </div>
-  <div class="h-screen bg-black-secondary justify-items-center"><!--Fifth Section-->
-    <div class="grid grid-rows-4 grid-flow-col gap-y-4 gap-x-24 pt-[9.5vh] container relative font-radley">
-      <div class="col-span-2 text-left text-xl text-text-title leading-[6rem]">Simply Cozy <br>Bites & Sips</div>
-      <div class="col-span-2 text-left text-mid text-text-paragraph">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id?</div>
-      <div class="row-span-2 col-span-2">
-        <ul>
-          <li class="grid grid-flow-col auto-cols-auto gap-4 pb-10">
-            <h1 class="text-left text-base text-text-paragraph">Americano</h1>
-            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[6px] w-full h-9"></div>
-            <h1 class="text-right text-base text-text-divider">160.00</h1>
-          </li>
-          <li class="grid grid-flow-col auto-cols-auto gap-4 pb-10">
-            <h1 class="text-left text-base text-text-paragraph">Latte</h1>
-            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[6px] w-full h-9"></div>
-            <h1 class="text-right text-base text-text-divider">160.00</h1>
-          </li>
-          <li class="grid grid-flow-col auto-cols-auto gap-4 pb-10">
-            <h1 class="text-left text-base text-text-paragraph">Macchiato</h1>
-            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[6px] w-full h-9"></div>
-            <h1 class="text-right text-base text-text-divider">160.00</h1>
-          </li>
-          <li class="grid grid-flow-col auto-cols-auto gap-4 pb-10">
-            <h1 class="text-left text-base text-text-paragraph">Mocha</h1>
-            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[6px] w-full h-9"></div>
-            <h1 class="text-right text-base text-text-divider">160.00</h1>
-          </li>
-          <li class="grid grid-flow-col auto-cols-auto gap-4 pb-10">
-            <h1 class="text-left text-base text-text-paragraph">Cappucino</h1>
-            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[6px] w-full h-9"></div>
-            <h1 class="text-right text-base text-text-divider">160.00</h1>
-          </li>
-        </ul>
+  <div class="bg-black-primary justify-items-center py-10 md:py-20"><!--Second Section-->
+    <div class="font-radley px-3 pb-10 lg:pb-20">
+      <div class="text-4xl md:text-5xl text-text-title pb-10 w-full ">Our customer's favorite</div>
+      <div class="text-sm  text-center  text-text-paragraph max-w-3xl">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+    </div>
+    <div class="w-full max-w-5xl col-span-3">
+      <div class="grid lg:gap-16 grid-cols-3 ">
+        <div v-for="(fav, index) in customerFav" :key="'fav'+index" class="h-52 lg:h-96 mx-auto w-full md:w-full relative bg-center"
+             :style="{ backgroundImage: `url(${fav.customerFavImage})` }">
+        </div>
       </div>
-      <div class="row-span-4 col-span-4"><img class="md:size-auto" src="../assets/images/landing/sec5image.png"></div>
     </div>
   </div>
-  <div class="h-[47rem] bg-black-primary justify-items-center"><!--Sixth Section-->
-    <h1 class="text-xl text-text-title pb-10 pt-14 w-full font-radley">We work hand-in-hand<br>with the best people!</h1>
+  <div class="lg:h-screen bg-black-secondary justify-items-center"><!--Fifth Section-->
+    <div class="grid grid-cols-8 relative font-radley w-full m-auto items-center h-full">
+      <div class="col-span-8 md:col-span-5 order-2 md::order-1 px-3 md:px-10 py-10 lg:py-0 mx-auto lg:max-w-lg">
+        <div class="text-4xl md:text-5xl text-text-title">Simply Cozy <br>Bites & Sips</div>
+        <div class="text-sm  text-text-paragraph py-10 border-text-divider border-b">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id?</div>
+        <div class="row-span-2 pt-10">
+          <ul>
+          <li  v-for="(coffee, index) in menu" :key="'coffee'+index" class="grid grid-flow-col auto-cols-auto gap-4 pb-5 md:pb-10">
+            <div class="text-left text-sm  text-text-paragraph"> {{ coffee.coffeeName }}</div>
+            <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[3px] xl:border-b-[6px] w-full h-5 xl:h-9"></div>
+            <div class="text-right text-sm text-text-divider"> {{ coffee.coffeePrice }}<sup>.00</sup></div>
+          </li>
+        </ul>
+        </div>
+      </div>
+      <div class="col-span-8 md:col-span-3 order-1 md:order-2 h-40 md:h-full bg-fixed bg-no-repeat bg-right" :style="{ backgroundImage: `url(${require('../assets/images/landing/sec5image.png')})` }"></div>
+    </div>
+  </div>
+  <div class="bg-black-primary justify-items-center py-10 lg:py-20"><!--Sixth Section-->
+    <h1 class="text-4xl md:text-5xl text-text-title pb-10 w-full font-radley">We work hand-in-hand<br>with the best people!</h1>
     <div class="w-full max-w-4xl">
-      <ul class="grid gap-80 grid-cols-2">
+      <ul class="grid lg:gap-80 grid-cols-2">
         <li>
           <div class="pt-7">
-            <div><img src="../assets/images/landing/sec6image.png" class="size-full"></div>
+            <div class=""><img src="../assets/images/landing/sec6image.png" class="mx-auto max-h-40"></div>
           </div>
         </li>
         <li>
           <div class="pt-7">
-            <div><img src="../assets/images/landing/sec6image2.png" class="size-full"></div>
+            <div class=""><img src="../assets/images/landing/sec6image2.png" class="mx-auto max-h-40"></div>
           </div>
         </li>
       </ul>
     </div>
   </div>
-  <div class="h-full bg-black-secondary justify-items-center pb-32"><!--Seventh Section-->
-    <h1 class="text-xl text-text-title pb-10 pt-32 w-full font-radley">A little taste of the tutorial drinks<br> we've crafted just for you!</h1>
-    <div class="grid grid-cols-2 gap-4 w-10/12">
-      <div class="grid grid-cols-2">
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId"
+  <div class="h-full bg-black-secondary justify-items-center py-10 lg:py-20"><!--Seventh Section-->
+    <h1 class="text-4xl md:text-5xl text-text-title w-full font-radley pb-10">A taste of the custom drinks <br>we've crafted for you.</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-3 ">
+      <div v-for="(video, index) in tutorialDrinks" :key="'video'+index" class="grid-cols-1">
+        <iframe :src="video.link"
                 class="justify-self-end"
-                width="500"
-                height="889"
-                style="border:none;overflow:hidden"
-                scrolling="no" frameborder="0" allowfullscreen="true"
+                width="202.50"
+                height="360"
+                style="border: none; overflow: hidden;"
+                scrolling="no"
+                frameborder="0"
+                allowfullscreen="true"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe>
-        <div class="bg-black-primary w-full justify-self-start container relative overflow-auto">
-          <h1 class="text-left text-base text-text-title font-radley m-8">RECIPE below <br><br>Our student barista is here! Let's watch @Adingdingding as she makes a mocktail that you could try!</h1>
-          <p class="text-left text-sm text-text-paragraph h-96 font-radley mt-10 m-8"> 
-              Our student barista is here! Let's watch Nicole Paulo as she makes a mocktail that you could try!<br><br>
-              15 ml Monin Orgeat Syrup<br>
-              15 ml Elderflower Syrup<br>
-              3 drops saline<br>
-              15 ml lemon juice<br>
-              60 ml green tea<br>
-              ENJOY DISCOUNTS + OFFERS!<br>
-              KOFIL Yanyan DGTE and Dipolog<br>
-              GRANDE Bakeworld Davao and Tagum<br>
-              Use Code: TPDANGELO<br><br>
-              Try this recipe and visit Cafe Mystika for our curated drinks!<br>
-          </p>
-          <a href="https://www.facebook.com/CafeMystika/videos" target="_blank"><button class="text-sm text-text-paragraph font-radley bg-button-active px-5 py-3 w-full block rounded-lg" exact-active-class="bg-button-active">See more</button></a>
-        </div>
-      </div>
-      <div class="grid grid-cols-2">
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F1275775460059323&width=500&show_text=false&height=889&appId"
-                class="justify-self-end"
-                width="500"
-                height="889"
-                style="border:none;overflow:hidden"
-                scrolling="no" frameborder="0" allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        <div class="bg-black-primary w-full justify-self-start container relative  overflow-auto">
-          <h1 class="text-left text-base text-text-title font-radley m-8">@sayresven is here again guys! Brewing some goodness for us using our @gourmetfarmsph Plunger and Mt.Apo Kapelipinas here at @cafemystika</h1>
-          <p class="text-left text-sm text-text-paragraph h-96 font-radley mt-10 m-8"> 
-            Sven is here again guys! Brewing some goodness for us using our Gourmet Farms Plunger and Mt.Apo Kapelipinas here at the cafe ❤️<br><br>
-            ENJOY DISCOUNTS + OFFERS!<br>
-            KOFIL Yanyan DGTE and Dipolog<br>
-            GRANDE Bakeworld Davao<br>
-            Use Code: TPDANGELO<br>
-            You may finish the video for the whole recipe!<br>
-            If you wanna try this, please do come here at the cafe!<br><br>
-            #fyp #foryoupage #foryou #thepinoydrinker #cafemystika #frenchpress
-          </p>
-          <a href="https://www.facebook.com/CafeMystika/videos" target="_blank"><button class="text-sm text-text-paragraph font-radley bg-button-active px-5 py-3 w-full block rounded-lg" exact-active-class="bg-button-active">See more</button></a>
-        </div>
       </div>
     </div>
     
@@ -160,6 +106,18 @@ export default {
           { customerFavImage: (require('@/assets/images/landing/favimage1.png')) },
           { customerFavImage: (require('@/assets/images/landing/favimage2.png')) },
           { customerFavImage: (require('@/assets/images/landing/favimage3.png')) }
+        ],
+        menu:[
+          { coffeeName:"Americano", coffeePrice:"160" },
+          { coffeeName:"Latte", coffeePrice:"160" },
+          { coffeeName:"Macchiato", coffeePrice:"160" },
+          { coffeeName:"Mocha", coffeePrice:"160" },
+          { coffeeName:"Vanilla", coffeePrice:"160" },
+        ],
+        tutorialDrinks:[
+          { link:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId" },
+          { link:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F1275775460059323&width=500&show_text=false&height=889&appId" },
+          { link:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F1275775460059323&width=500&show_text=false&height=889&appId" },
         ]
       };
       

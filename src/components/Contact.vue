@@ -1,7 +1,7 @@
 <template>
     <div class="mt-40">
-      <div class="py-20 container mx-auto px-5 md:px-10">
-        <p class="text-5xl mb-10 font-radley text-text-title ">Have a Word with Us</p>
+      <div class="py-20 container mx-auto px-3 md:px-10">
+        <p class="text-5xl mb-10 font-radley text-text-title ">Have a Word <br> with Us</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
           <div class="bg-black-secondary w-full xl:w-3/4 mx-auto h-52 py-10 px-5 md:px-0 font-radley">
             <p class="text-text-divider text-3xl mb-5"> Customer Service:</p>
@@ -17,7 +17,7 @@
       </div>
       <div class="md:pb-20 container mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-20">
-          <div class="w-full xl:w-3/4 mx-auto py-10 px-5 lg:px-10 xl:px-0 font-radley order-2 lg:order-1">
+          <div class="w-full xl:w-3/4 mx-auto py-10 px-3 lg:px-10 xl:px-0 font-radley order-2 lg:order-1">
             <div class="mb-10 text-center lg:text-start">
               <p class="text-5xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
               <p class="w-3/4 lg:w-full mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>

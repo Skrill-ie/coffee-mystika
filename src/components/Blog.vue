@@ -4,7 +4,7 @@
     </div>
     <div class="container py-20 mx-auto pb-10">
       <div class="grid gap-5 xl:gap-14 lg:grid-cols-3">
-        <div class="w-full max-w-5xl lg:col-span-2 px-5 lg:pl-10"> <!--divide section 1-->
+        <div class="w-full max-w-5xl lg:col-span-2 px-3 lg:pl-10"> <!--divide section 1-->
           <ul class="grid gap-5 lg:gap-10 grid-cols-2 grid-rows-2">
             <li v-for="(blog, index) in blogs" :key="'blog'+index">
               <div @click="toggleBlogModal(blog)">
@@ -17,7 +17,7 @@
         </div>
         <div class="lg:col-span-1"> <!--divide section 2-->
           <div class="text-sm lg:sticky lg:top-36">
-            <div class=" bg-black-secondary w-full font-radley px-5 lg:px-10 pb-10">
+            <div class=" bg-black-secondary w-full font-radley px-3 lg:px-10 pb-10">
               <div class="pt-10 text-center lg:text-start">
                 <p class="text-4xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
                 <p class="w-3/4 lg:w-full mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>

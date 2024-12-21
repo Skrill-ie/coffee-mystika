@@ -7,9 +7,9 @@
   <div class="md:h-screen bg-black-secondary justify-items-center"><!--Third Section-->
     <div class="grid grid-cols-2 gap-5 md:gap-10  container font-radley w-full m-auto items-center h-full">
       <div class="col-span-2 md:col-span-1 h-52 md:h-4/5 bg-center bg-fixed lg:bg-local bg-no-repeat" :style="{ backgroundImage: `url(${require('../assets/images/landing/sec3image.png')})` }"></div>
-      <div class="col-span-2 md:col-span-1 text-left px-3 py-10 lg:py-0 mx-auto lg:w-96">
-        <div class="text-center md:text-left text-4xl md:text-5xl mb-10 text-text-title">Coffee and Science come together, warmly brewed.</div>
-        <div class="text-center md:text-left text-text-paragraph text-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+      <div class="col-span-2 md:col-span-1 text-left px-3 py-10 lg:py-0 mx-auto lg:w-96 ">
+        <div class="text-4xl md:text-5xl mb-10 text-text-title">Coffee and Science come together, warmly brewed.</div>
+        <div class="text-text-paragraph text-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
       </div>
     </div>
   </div>
@@ -21,9 +21,9 @@
     </div>
   </div>
   <div class="bg-black-primary justify-items-center py-10 md:py-20"><!--Second Section-->
-    <div class="font-radley px-3 pb-10 lg:pb-20">
+    <div class="font-radley px-3 pb-10 lg:pb-20 text-left md:text-center">
       <div class="text-4xl md:text-5xl text-text-title pb-10 w-full ">Our customer's favorite</div>
-      <div class="text-sm  text-center  text-text-paragraph max-w-3xl">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+      <div class="text-sm text-text-paragraph max-w-3xl">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
     </div>
     <div class="w-full max-w-5xl col-span-3">
       <div class="grid lg:gap-16 grid-cols-3 ">

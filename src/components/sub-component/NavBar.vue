@@ -95,6 +95,7 @@ export default {
       currentPageType:null,
       scrollY: 0, // Scroll position
       scrollLimit: 100,
+      isInitialLoad: true,
     };
   },
   props: {
@@ -131,10 +132,14 @@ export default {
     },
   },
   watch: {
-    $route(to) {
-      if(to.fullPath !== "/") {
-        this.toggleSidebar();
+    $route(to,from) {
+      console.log(to.fullPath, from.fullPath);
+      if (!this.isInitialLoad) {
+        if (to.fullPath !== "/") {
+          this.toggleSidebar();
+        }
       }
+      this.isInitialLoad = false;
     },
   },
   mounted() {

@@ -18,9 +18,9 @@
       <div class="md:pb-20 container mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-20">
           <div class="w-full xl:w-3/4 mx-auto py-10 px-3 lg:px-10 xl:px-0 font-radley order-2 lg:order-1">
-            <div class="mb-10 text-center lg:text-start">
+            <div class="mb-10 lg:text-center text-start">
               <p class="text-5xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
-              <p class="w-3/4 lg:w-full mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
+              <p class="w-full lg:mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
             </div>
             <div class="border-b border-gray-900/10">
               <div class="mt-10 grid grid-cols-1 gap-x-3 gap-y-3 sm:gap-x-6 sm:gap-y-6 sm:grid-cols-6">

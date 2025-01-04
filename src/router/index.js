@@ -36,6 +36,20 @@ const router = createRouter({
     component: BlogPage, // Route to Blog component
   },
 ],
+  scrollBehavior(to, from, savedPosition) {
+    // If there's a saved position, go to it (for back/forward browser navigation)
+    if (savedPosition) {
+      return savedPosition;
+    }
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth", // Optional: adds a smooth scrolling animation
+      };
+    }
+    // Default: Scroll to top
+    return { top: 0 };
+  },
 });
 
 

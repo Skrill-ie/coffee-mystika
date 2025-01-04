@@ -8,12 +8,12 @@
       </div>
     </div>
     <!--  main nav  -->
-    <nav :class="navbarClass" class="py-6 px-3 md:px-10 lg:px-5 bg-black-secondary text-white font-radley transition-all duration-300">
+    <nav :class="navbarClass" class="py-6 px-3 md:px-10 lg:px-5 bg-black-secondary font-radley transition-all duration-300">
       <div class="container mx-auto justify-between flex items-center">
         <!--   Main Logo    -->
         <router-link to="/"><img src="../../assets/icons/cafe-mystika-icon.png"></router-link>
         <!--     Burger menu     -->
-        <button @click="toggleSidebar" type="button" class="inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <button @click="toggleSidebar" type="button" class="inline-flex items-center w-10 h-10 justify-center text-sm rounded-lg lg:hidden focus:outline-none focus:ring-2" aria-controls="navbar-default" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
@@ -112,8 +112,8 @@ export default {
     navbarClass() {
       const opacity = Math.min(this.scrollY / this.scrollLimit, 1);
       return {
-        'bg-transparent': opacity === 0,
-        'bg-opacity-100': opacity > 0,
+        'bg-transparent text-text-paragraph': opacity === 0,
+        'bg-opacity-100 text-text-divider lg:text-text-paragraph': opacity > 0,
       };
     },
   },

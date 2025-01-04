@@ -12,11 +12,11 @@
         </div>
         <div class="col-span-2 md:col-span-1 md:text-left px-5 py-0 pb-10 md:py-20">
           <div class="hidden md:block text-4xl font-radley text-text-paragraph mb-4 capitalize">{{ currentPageType }} Coming Soon</div>
-          <div class="py-10">
+          <div class="py-10 text-text-paragraph">
             <span v-if="currentPageType === 'shop'" >Exciting things are on the way! Our shop is coming soon—stay tuned!</span>
             <span v-else> Get ready—our class is launching soon! Stay tuned for updates!</span>
           </div>
-          <button @click="$emit('close')" class="px-4 py-2 bg-button-active rounded-md hover:bg-orange-400 transition w-full">
+          <button @click="$emit('close')" class="px-4 py-2 bg-button-active rounded-md hover:bg-orange-400 transition w-full text-text-paragraph">
             Close
           </button>
         </div>

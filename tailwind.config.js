@@ -30,7 +30,7 @@ module.exports = {
         }
       },
       backgroundImage:{
-        blackOverlay: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)"
+        blackOverlay: "linear-gradient(to bottom, rgba(0,0,0,0.8) 100%, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%)"
       },
       fontFamily:{
         radley: ['Radley', 'serif'], // Custom font for Radley

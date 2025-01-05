@@ -10,7 +10,7 @@
               <div @click="toggleBlogModal(blog)">
                 <div><img :src="blog.blogImage" class="size-full"></div>
                 <div class="text-lg lg:text-2xl text-text-paragraph font-radley text-left pt-4 text-ellipsis">{{ blog.title }}</div>
-                <div class="text-xs lg:text-sm text-right text-gray-500 font-radley pt-7">{{ blog.date }}</div>
+                <div class="text-xs lg:text-sm text-right text-gray-500 font-radley pt-3 lg:pt-7">{{ blog.date }}</div>
               </div>
             </li>
           </ul>
@@ -20,7 +20,7 @@
             <div class=" bg-black-secondary w-full font-radley px-3 lg:px-10 pb-10">
               <div class="pt-10 text-center lg:text-start">
                 <p class="text-4xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
-                <p class="w-3/4 lg:w-full mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
+                <p class="mx-auto text-text-paragraph py-10">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
               </div>
               <div class="pt-5">
                 <input type="text" id="fname" name="fname" placeholder="First Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
@@ -52,7 +52,7 @@
     data() {
       return {
         heroImage: (require('@/assets/images/blog/mystika5.jpg')),
-        mainText: "Featured Post",
+        mainText: "Mystika Moments",
         subText: "Lorem epsum odor amet, consectetuer adipiscing elit",
         paragraphText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum lacus nulla, et condimentum nunc tristique nec. Donec ornare velit ipsum, eget blandit augue egestas convallis. In auctor diam urna, sit amet viverra diam convallis eget. Morbi sed eleifend lacus. Fusce sit amet eleifend sapien, at varius odio. Nunc sed neque pretium, pharetra erat in, feugiat diam. Aliquam erat volutpat. ",
         blogs: [

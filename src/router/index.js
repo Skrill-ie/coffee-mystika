@@ -48,10 +48,16 @@ const router = createRouter({
       };
     }
     // Default: Scroll to top
-    return { top: 0 };
+    document.body.style.overflow = '';
+    return { top:0 };
   },
+
 });
 
-
+router.beforeEach((to, from, next) => {
+  document.body.style.overflow = ''; // Ensure scroll unlocked
+  console.log(`Navigating to ${to.fullPath}`);
+  next();
+});
 export {  AboutUs, ContactUs };
 export default router;

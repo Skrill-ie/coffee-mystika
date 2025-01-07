@@ -121,27 +121,29 @@
   </section>
   <section class="bg-black-primary justify-items-center py-10 lg:py-20"><!--Sixth Section-->
     <h1 class="text-4xl md:text-5xl text-text-title pb-16 w-full font-radley">We work hand-in-hand<br>with the best people!</h1>
-    <div class="w-full max-w-4xl">
-      <ul class="grid lg:gap-80 grid-cols-2">
-        <li>
-          <div class="pt-7">
-            <div class=""><img src="../assets/images/landing/sec6image.png" class="mx-auto max-h-40"></div>
+    <div class="w-full max-w-4xl px-3">
+      <div class="flex flex-col md:flex-row gap-16">
+          <div class="pt-7 w-full opacity-50 md:opacity-100">
+            <img src="../assets/images/landing/jollycow.png" class="mx-auto max-h-40 w-46">
           </div>
-        </li>
-        <li>
-          <div class="pt-7">
-            <div class=""><img src="../assets/images/landing/sec6image2.png" class="mx-auto max-h-40"></div>
+          <div class="pt-7 w-full opacity-50 md:opacity-100">
+            <img src="../assets/images/landing/yanyan.png" class="mx-auto max-h-40">
           </div>
-        </li>
-      </ul>
+          <div class="pt-7 w-full opacity-50 md:opacity-100">
+            <img src="../assets/images/landing/familyschoice.png" class="mx-auto max-h-40">
+          </div>
+          <div class="pt-7 w-full opacity-50 md:opacity-100">
+            <img src="../assets/images/landing/gourmetfarms.png" class="mx-auto max-h-40">
+          </div>
+      </div>
     </div>
   </section>
   <section class="h-full bg-black-secondary justify-items-center py-10 lg:py-20"><!--Seventh Section-->
     <h1 class="text-4xl md:text-5xl text-text-title w-full font-radley pb-16">A taste of the custom drinks <br>we've crafted for you.</h1>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-3 ">
-      <div v-for="(video, index) in tutorialDrinks" :key="'video'+index" class="grid-cols-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-3">
+      <div v-for="(video, index) in tutorialDrinks" :key="'video'+index" class="grid-cols-1 justify-items-center">
         <iframe :src="video.link"
-                class="justify-self-end"
+                class=""
                 width="202.50"
                 height="360"
                 style="border: none; overflow: hidden;"

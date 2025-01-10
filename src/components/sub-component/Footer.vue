@@ -18,8 +18,8 @@
               <div class="flex-1 text-left text-text-paragraph px-3">
                 <div class="text-2xl mb-5 lg:mb-10 text-text-title text-left">Leave us a Review</div>
                 <ul class="text-text-paragraph ">
-                  <li class="mb-3 inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-1.png" alt=""><a href="https://search.google.com/local/writereview?placeid=ChIJzbVPJQBnqzMR9g-JrS6XLBA" target="_blank"><span class="opacity-55">maps</span></a></li>
-                  <li class="mb-3 inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-1.png" alt=""><a href="https://www.tripadvisor.com.ph/UserReviewEdit-g3600145-d27734716-Cafe_Mystika-Valencia_Negros_Oriental_Negros_Island_Visayas.html" target="_blank"><span class="opacity-55">trip advisor</span></a></li>
+                  <li class="mb-3 inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-1.png" alt=""><a href="https://search.google.com/local/writereview?placeid=ChIJzbVPJQBnqzMR9g-JrS6XLBA" target="_blank"><span class="opacity-55">Google Maps</span></a></li>
+                  <li class="mb-3 inline-flex justify-start w-full"><img class="mr-5" src="../../assets/icons/Vector-1.png" alt=""><a href="https://www.tripadvisor.com.ph/UserReviewEdit-g3600145-d27734716-Cafe_Mystika-Valencia_Negros_Oriental_Negros_Island_Visayas.html" target="_blank"><span class="opacity-55">Trip Advisor</span></a></li>
                 </ul>
               </div>
               <div class="flex-1 ">

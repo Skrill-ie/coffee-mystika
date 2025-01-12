@@ -217,11 +217,11 @@
         barista10:{
           baristaImage:(require('@/assets/images/baristas/barista-10.png')),
           baristaName: "Martton Macapanas",
-          baristaGen: "2",
+          baristaGen: "4",
         },
         barista11:{
           baristaImage:(require('@/assets/images/baristas/barista-11.png')),
-          baristaName: "Laurie Bungcal",
+          baristaName: "Laurie Buncal",
           baristaGen: "3",
         },
         barista12:{

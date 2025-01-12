@@ -19,16 +19,21 @@
           <div class="text-sm lg:sticky lg:top-36">
             <div class=" bg-black-secondary w-full font-radley px-3 lg:px-10 pb-10">
               <div class="pt-10 text-center lg:text-start">
-                <p class="text-4xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
-                <p class="mx-auto text-text-paragraph py-10">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
+                <p class="text-4xl mb-10 font-radley text-text-title">Get cozy and follow our Socials!</p>
+                <p class="mx-auto text-text-paragraph py-10">Cozy up with the Cafe Mystika Socials — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
               </div>
-              <div class="pt-5">
-                <input type="text" id="fname" name="fname" placeholder="First Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
-                <input type="text" id="fname" name="lname" placeholder="Last Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4 my-5">
-                <input type="text" id="email" name="email" placeholder="Email" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">
-              </div>
-              <div class="pt-4">
-                <button class="px-5 py-3 w-full block rounded-lg bg-button-active hover:bg-orange-400 transition">Subscribe</button>
+<!--              <div class="pt-5">-->
+<!--                <input type="text" id="fname" name="fname" placeholder="First Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">-->
+<!--                <input type="text" id="fname" name="lname" placeholder="Last Name" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4 my-5">-->
+<!--                <input type="text" id="email" name="email" placeholder="Email" style="color: #FDECD8" class="w-full border-solid border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] px-4 py-4">-->
+<!--              </div>-->
+<!--              <div class="pt-4">-->
+<!--                <button class="px-5 py-3 w-full block rounded-lg bg-button-active hover:bg-orange-400 transition">Subscribe</button>-->
+<!--              </div>-->
+              <div class="flex gap-10 justify-center">
+                <div><a target="_blank" :href="socialInstagram"><img class="w-24" src="../assets/icons/instagram.png"></a></div>
+                <div><a target="_blank" :href="socialYoutube"><img class="w-24" src="../assets/icons/youtube.png"></a></div>
+                <div><a target="_blank" :href="socialFacebook"><img class="w-24" src="../assets/icons/facebook.png"></a></div>
               </div>
             </div>
           </div>
@@ -63,6 +68,9 @@
         ],
         showBlogModal: false,
         currentBlog: {},
+        socialFacebook: "https://www.facebook.com/CafeMystika",
+        socialInstagram: "https://www.instagram.com/cafemystika/",
+        socialYoutube: "https://www.youtube.com/c/ThePinoyDrinker",
       };
     },
     methods: {

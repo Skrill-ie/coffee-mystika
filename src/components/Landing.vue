@@ -106,7 +106,7 @@
           <li  v-for="(coffee, index) in menu" :key="'coffee'+index"  class="pb-5 md:pb-7">
             <div class="flex mb-3">
               <div class="text-left text-sm  text-text-paragraph font-bold"> {{ coffee.coffeeName }}</div>
-              <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5"></div>
+              <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5 opacity-55"></div>
               <div class="text-right text-sm text-text-divider"> {{ coffee.coffeePrice }}<sup>.00</sup></div>
             </div>
             <div class="text-text-paragraph opacity-55">{{coffee.description}}</div>
@@ -174,16 +174,16 @@ export default {
         subText: "Since 2021 , Cafe Mystika has been on a mission to provide sustainable and ethical, hand roasted, specialty coffee  at a fair price for you and the farmers.",
         activeMerch: 0,
         customerFav: [
-          { customerFavImage: (require('@/assets/images/landing/favimage1.png')) },
-          { customerFavImage: (require('@/assets/images/landing/favimage2.png')) },
-          { customerFavImage: (require('@/assets/images/landing/favimage3.png')) }
+          { customerFavImage: (require('@/assets/images/landing/favimage-1.jpg')) },
+          { customerFavImage: (require('@/assets/images/landing/favimage-2.jpg')) },
+          { customerFavImage: (require('@/assets/images/landing/favimage-3.jpg')) }
         ],
         menu:[
-          { coffeeName:"Americano", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros"},
-          { coffeeName:"Latte", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Macchiato", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Mocha", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Vanilla", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
+          { coffeeName:"Spanish Latte", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros"},
+          { coffeeName:"Vietnamese", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
+          { coffeeName:"Hibiscus Tea", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
+          { coffeeName:"Mocha Cafe", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
+          { coffeeName:"Vanilla Latte", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
         ],
         tutorialDrinks:[
           { link:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId" },

@@ -36,37 +36,37 @@
             <div class="text-text-paragraph text-left">
               The concept for Cafe Mystika began with a vision of creating a haven for coffee lovers and adventurers. The idea was to offer an escape from the hustle and bustle of urban life, blending sustainability with creativity in beverage offerings.
             </div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary md:ml-auto relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Establishment</div>
             <div class="text-text-paragraph text-left">Cafe Mystika opened its doors in Valencia, Negros Oriental, with a menu celebrating local and international coffee. From day one, the café offered a space that catered to everyone, from solo travelers seeking solitude to families enjoying a peaceful outing.</div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Expansion of Offerings</div>
             <div class="text-text-paragraph text-left">Building on its success, Cafe Mystika expanded its menu to include a diverse range of beverages and complementary products to suit every preference, ensuring its inclusivity.</div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary md:ml-auto relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Community Initiatives</div>
             <div class="text-text-paragraph text-left">Cafe Mystika began actively engaging with the local community through sustainability projects, collaborations with local farmers and artisans, and events that brought people together, reflecting its ethos of serving all walks of life. </div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Recognition as a Local and Tourist Favorite</div>
             <div class="text-text-paragraph text-left">Known for its innovative beverages and serene ambiance, the café became a sought-after destination for both locals and tourists seeking quality and peace of mind.</div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary md:ml-auto relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Sustainability Milestones</div>
             <div class="text-text-paragraph text-left">Staying true to its mission, Cafe Mystika achieved significant milestones in adopting sustainable practices, from eco-friendly packaging to sourcing ethically and locally. </div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 z-20"></div>
           </div>
           <div class="md:w-3/6 flex flex-col items-center justify-center p-6 md:p-10  text-text-title bg-black-secondary relative">
             <div class="w-full lg:w-2/3 border-4 border-text-divider text-2xl mb-10 py-2">Looking Ahead</div>
             <div class="text-text-paragraph text-left">Cafe Mystika continues to evolve, staying at the forefront of the coffee industry while remaining grounded in its mission to unite people and provide a timeless experience for all.</div>
-            <div class="absolute w-9 h-9 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
+            <div class="absolute w-10 h-10 rounded-full bg-button-active -left-5 md:-right-5 md:left-auto z-20"></div>
           </div>
           </div>
         </div>

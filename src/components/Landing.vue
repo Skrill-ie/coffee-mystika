@@ -179,11 +179,11 @@ export default {
           { customerFavImage: (require('@/assets/images/landing/favimage-3.jpg')) }
         ],
         menu:[
-          { coffeeName:"Spanish Latte", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros"},
-          { coffeeName:"Vietnamese", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Hibiscus Tea", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Mocha Cafe", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
-          { coffeeName:"Vanilla Latte", coffeePrice:"160",description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros" },
+          { coffeeName:"Spanish Latte", coffeePrice:"139",description: "a creamy blend of bold espresso, silky steamed milk, and a touch of sweet condensed milk that’ll have you coming back for more!"},
+          { coffeeName:"Vietnamese", coffeePrice:"140",description: "a rich, robust brew sweetened with silky condensed milk, creating the perfect balance of strength and indulgence!" },
+          { coffeeName:"Hibiscus Tea", coffeePrice:"135",description: "a vibrant, tangy, and naturally caffeine-free infusion bursting with floral notes and a hint of fruity sweetness!" },
+          { coffeeName:"Cafe Mocha", coffeePrice:"139",description: "a perfect blend of bold espresso, velvety steamed milk, and rich chocolate, delivering pure coffee-chocolate bliss in every sip!" },
+          { coffeeName:"Vanilla Latte", coffeePrice:"139",description: "a creamy blend of bold espresso, steamed milk, and a hint of sweet, aromatic vanilla for the perfect touch of indulgence!" },
         ],
         tutorialDrinks:[
           { link:"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCafeMystika%2Fvideos%2F831331079120923%3Flocale%3Dnl_BE&width=500&show_text=false&height=889&appId" },
@@ -193,7 +193,6 @@ export default {
         featuredMerch:[
             {
               name:"LABARENTO",
-
               description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.",
               price: "750.00",
               src:(require('@/assets/images/MERCH-V1.png')),

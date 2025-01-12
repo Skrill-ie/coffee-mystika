@@ -19,35 +19,39 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-20">
           <div class="w-full xl:w-3/4 mx-auto py-10 px-3 lg:px-10 xl:px-0 font-radley order-2 lg:order-1">
             <div class="mb-10 lg:text-center text-start">
-              <p class="text-5xl mb-10 font-radley text-text-title">Get cozy and join our newsletter family!</p>
-              <p class="w-full lg:mx-auto text-text-paragraph">Cozy up with the Cafe Mystika Newsletter — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
+              <p class="text-5xl mb-10 font-radley text-text-title">Get cozy and Follow our Socials!</p>
+              <p class="w-full lg:mx-auto text-text-paragraph">Join up with the Cafe Mystika Socials — get the latest news, special deals, and secret coffee notes brewed just for you!</p>
             </div>
-            <div class="border-b border-gray-900/10">
-              <div class="mt-10 grid grid-cols-1 gap-x-3 gap-y-3 sm:gap-x-6 sm:gap-y-6 sm:grid-cols-6">
-                <div class="sm:col-span-3">
-                  <div class="mt-2">
-                    <input type="text"
-                           name="first-name"
-                           placeholder="First Name"
-                           id="first-name"
-                           autocomplete="given-name"
-                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
-                  </div>
-                </div>
-                <div class="sm:col-span-3">
-                  <div class="mt-2">
-                    <input type="text" name="last-name" placeholder="Last Name" id="last-name" autocomplete="last-name"
-                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
-                  </div>
-                </div>
-                <div class="sm:col-span-6">
-                  <div class="mt-2">
-                    <input type="email" name="email" placeholder="Email Adress" id="email" autocomplete="email"
-                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">
-                  </div>
-                </div>
-              </div>
-              <button class="mt-6 bg-button-active hover:bg-orange-400 transition w-full py-4 text-text-paragraph rounded-md"> Message Us </button>
+            <div class="flex gap-10 justify-center">
+              <div><a target="_blank" :href="socialInstagram"><img class="w-24" src="../assets/icons/instagram.png"></a></div>
+              <div><a target="_blank" :href="socialYoutube"><img class="w-24" src="../assets/icons/youtube.png"></a></div>
+              <div><a target="_blank" :href="socialFacebook"><img class="w-24" src="../assets/icons/facebook.png"></a></div>
+<!--              <div class="mt-10 grid grid-cols-1 gap-x-3 gap-y-3 sm:gap-x-6 sm:gap-y-6 sm:grid-cols-6">-->
+<!--                <div class="sm:col-span-3">-->
+<!--                  <div class="mt-2">-->
+<!--                    <input type="text"-->
+<!--                           name="first-name"-->
+<!--                           placeholder="First Name"-->
+<!--                           id="first-name"-->
+<!--                           autocomplete="given-name"-->
+<!--                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="sm:col-span-3">-->
+<!--                  <div class="mt-2">-->
+<!--                    <input type="text" name="last-name" placeholder="Last Name" id="last-name" autocomplete="last-name"-->
+<!--                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div class="sm:col-span-6">-->
+<!--                  <div class="mt-2">-->
+<!--                    <input type="email" name="email" placeholder="Email Adress" id="email" autocomplete="email"-->
+<!--                           class="border bg-transparent placeholder-[#FDECD8] border-[#F9DBB7] p-4 focus:outline-none focus:ring-2 focus:ring-text-divider focus:border-text-divider bg-black-primary text-text-divider w-full">-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <button class="mt-6 bg-button-active hover:bg-orange-400 transition w-full py-4 text-text-paragraph rounded-md"> Message Us </button>-->
+
             </div>
           </div>
           <div class="w-full xl:w-3/4 mx-auto py-0 md:py-10 font-radley order-1 lg:order-2">
@@ -70,6 +74,13 @@
   <script>
   export default {
     name: 'ContactUs',
+    data() {
+      return {
+        socialFacebook: "https://www.facebook.com/CafeMystika",
+        socialInstagram: "https://www.instagram.com/cafemystika/",
+        socialYoutube: "https://www.youtube.com/c/ThePinoyDrinker",
+      };
+    },
   };
   </script>
   

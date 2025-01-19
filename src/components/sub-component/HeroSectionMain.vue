@@ -1,6 +1,6 @@
 <template>
-    <div class="h-screen bg-cover bg-right-bottom md:bg-center bg-fixed" :style="{ backgroundImage: `url(${heroImage})` }">
-        <div class="bg-blackOverlay">
+    <div class="h-auto sm:h-screen bg-cover bg-right-bottom md:bg-center bg-fixed" :style="{ backgroundImage: `url(${heroImage})` }">
+        <div class="bg-blackOverlay pt-16 sm:pt-0">
             <div class="container mx-auto h-screen pb-10 px-5 lg:px-10">
               <div class="relative h-full">
                 <div class="md:text-left absolute inset-x-0 bottom-0 font-radley">

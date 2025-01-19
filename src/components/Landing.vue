@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen"> <!--Hero Section-->
+  <section class="h-auto sm:h-screen"> <!--Hero Section-->
     <div>
       <LandingHeroPage :heroImage="heroImage" :IconImage="IconImage" :mainText="mainText" :subText="subText"/>
     </div>
@@ -62,7 +62,7 @@
           <div class="w-1/2 lg:w-3/4 mx-auto pt-10">
             <img class="w-full" :src="items.src">
           </div>
-          <div class="py-10 text-black-secondary px-3 text-left">
+          <div class="py-10 text-black-secondary px-3 lg:px-10 text-left">
             <div class="text-4xl md:text-5xl pb-10 w-full"> {{ items.name }}</div>
             <div class="">{{ items.description }}</div>
             <div class="pt-10">
@@ -105,8 +105,8 @@
           <ul>
           <li  v-for="(coffee, index) in menu" :key="'coffee'+index"  class="pb-5 md:pb-7">
             <div class="flex mb-3">
-              <div class="text-left text-sm  text-text-paragraph font-bold"> {{ coffee.coffeeName }}</div>
-              <div class="col-span-9 border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5 opacity-55"></div>
+              <div class="text-left text-sm text-text-paragraph md:w-48 font-bold"> {{ coffee.coffeeName }}</div>
+              <div class="border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5 opacity-55"></div>
               <div class="text-right text-sm text-text-divider"> {{ coffee.coffeePrice }}<sup>.00</sup></div>
             </div>
             <div class="text-text-paragraph opacity-55">{{coffee.description}}</div>

@@ -279,6 +279,11 @@
           baristaName: "Clarke Atienza",
           baristaGen: "6",
         },
+        barista23:{
+          baristaImage:(require('@/assets/images/baristas/barista-23.png')),
+          baristaName: "Allan Karl Dagoy",
+          baristaGen: "4",
+        },
       },
       heroImage: (require('@/assets/images/herobackground2.png')),
       mainText: "Meet the Dream Team",

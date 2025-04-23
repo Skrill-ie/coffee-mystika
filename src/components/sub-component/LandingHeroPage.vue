@@ -4,8 +4,8 @@
             <div class="container mx-auto relative h-screen mb-40">
                 <div class="md:text-left absolute inset-x-0 bottom-0 font-radley">
                     <div class="justify-items-center animate-transition-left delay-1000 fill-mode-forwards"><img :src="IconImage"></div>
-                    <div class="px-3">
-                      <h1 class="text-5xl text-text-title pb-10 pt-14 w-full">{{ mainText }}</h1>
+                    <div class="px-3 bottom-1/4">
+                      <h1 class="text-5xl text-text-title pb-10 pt-14 w- lg:w-3/4">{{ mainText }}</h1>
                       <div class="text-sm text-text-paragraph w-full pb-10">{{ subText }}</div>
                     </div>
                 </div>  

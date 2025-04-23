@@ -10,7 +10,7 @@
               <div @click="toggleBlogModal(blog)">
                 <div><img :src="blog.blogImage" class="size-full"></div>
                 <div class="text-lg lg:text-2xl text-text-paragraph font-radley text-left pt-4 text-ellipsis">{{ blog.title }}</div>
-                <div class="text-xs lg:text-sm text-right text-gray-500 font-radley pt-3 lg:pt-7">{{ blog.date }}</div>
+                <div class="text-xs lg:text-sm text-left text-gray-500 font-radley pt-3 lg:pt-7">{{ blog.date }}</div>
               </div>
             </li>
           </ul>
@@ -57,14 +57,34 @@
     data() {
       return {
         heroImage: (require('@/assets/images/blog/mystika5.jpg')),
-        mainText: "Mystika Moments",
-        subText: "Lorem epsum odor amet, consectetuer adipiscing elit",
-        paragraphText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum lacus nulla, et condimentum nunc tristique nec. Donec ornare velit ipsum, eget blandit augue egestas convallis. In auctor diam urna, sit amet viverra diam convallis eget. Morbi sed eleifend lacus. Fusce sit amet eleifend sapien, at varius odio. Nunc sed neque pretium, pharetra erat in, feugiat diam. Aliquam erat volutpat. ",
+        mainText: "Blogs & News",
+        subText: "Brewing Stories One Cup at a Time",
+        paragraphText: "Welcome to the cozy corner of our passion — where the aroma of freshly brewed beans meets the warmth of community storytelling. These blog posts is your behind-the-scenes pass to everything we love: from the origin of our favorite blends and barista secrets, to seasonal drink highlights and stories from our regulars. Whether you're a passionate coffee connoisseur or someone who just loves a good vibe and a better latte, there's a seat at the table for you here.",
         blogs: [
-          { blogImage: (require('@/assets/images/blog/blog-flairnjams-item.png')), blogImageModal: (require('@/assets/images/blog/blog-flairnjams.png')) , title: "Flair 'n Jams at Cafe Mystika", date: 'October 1, 2024', content:"Experience the electrifying fusion of artistry at Cafe Mystika's Flair n' Jams on <br><br> February 28th! Witness mind-blowing flair bartending skills in the afternoon, followed by an unforgettable evening of live music featuring the best of local artists of Negros Oriental. We have UBVSTE, Entropic, and The Lomboys. "},
-          { blogImage: (require('@/assets/images/blog/Group40.png')), title: 'Lorem  amet, consectetuer adipiscing ', date: 'October 2, 2024', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum lacus nulla, et condimentum nunc tristique nec. Donec ornare velit ipsum, eget blandit augue egestas convallis. In auctor diam urna, sit amet viverra diam convallis eget. Morbi sed eleifend lacus. Fusce sit amet eleifend sapien, at varius odio. Nunc sed neque pretium, pharetra erat in, feugiat diam. Aliquam erat volutpat. '},
-          { blogImage: (require('@/assets/images/blog/Group40.png')), title: 'Lorem ,  adipiscing elit', date: 'October 3, 2024', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum lacus nulla, et condimentum nunc tristique nec. Donec ornare velit ipsum, eget blandit augue egestas convallis. In auctor diam urna, sit amet viverra diam convallis eget. Morbi sed eleifend lacus. Fusce sit amet eleifend sapien, at varius odio. Nunc sed neque pretium, pharetra erat in, feugiat diam. Aliquam erat volutpat. '},
-          { blogImage: (require('@/assets/images/blog/Group40.png')), title: 'Lorem  amet, consectetuer  elit', date: 'October 4, 2024', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum lacus nulla, et condimentum nunc tristique nec. Donec ornare velit ipsum, eget blandit augue egestas convallis. In auctor diam urna, sit amet viverra diam convallis eget. Morbi sed eleifend lacus. Fusce sit amet eleifend sapien, at varius odio. Nunc sed neque pretium, pharetra erat in, feugiat diam. Aliquam erat volutpat. '},
+          { 
+            blogImage: (require('@/assets/images/blog/spiced-mocha-frappe-item.png')), 
+            title: "A drink that mirrors Capricorn's essence - Spiced Mocha Frappe", 
+            date: 'January 23, 2025', 
+            content:'Capricorn season is here. To celebrate, we’ve crafted the Spiced Mocha Frappe, a drink that mirrors Capricorn’s essence. Its bold espresso, velvety chocolate, and exotic chai spices create a blend that is both steady and indulgent, perfect for embracing the determined and refined energy of the season. <br><br><br> <img src="' + require('@/assets/images/blog/spiced-mocha-frappe.png') + '"> <br><br><img src="' + require('@/assets/images/blog/spiced-mocha-frappe-recipe.jpg') + '"><br> This series is designed to help you bring creativity and personality to your menu, inspired by the traits of each zodiac sign. Stay tuned! <br><br> #DaVinciGourmet #HoroscopeFlavours #CapricornSeason #FlavourInnovation #CoffeeArtistry #BaristaInspiration #SpicedMocha'
+          },
+          { 
+            blogImage: (require('@/assets/images/blog/mocha-sphere-item.png')), 
+            title: "A refined expression of the DaVinci Gourmet ethos - The Mocha Sphere", 
+            date: 'January 19, 2025', 
+            content:'The Mocha Sphere is a refined expression of the DaVinci Gourmet ethos—where art, craft, and science unite to create an unforgettable sensory experience. <br><br><br> <img src="' + require('@/assets/images/blog/mocha-sphere.jpg') + '"><br> From its visually stunning form to the precision of molecular gastronomy, Mikael Jasin transforms chocolate into a delicate creamy sphere. <br><br><img src="' + require('@/assets/images/blog/mocha-sphere-ingredients.jpg') + '"><br> A perfect balance of flavour, technique, and innovation, this creation showcases how DaVinci Gourmet inspires extraordinary artistry in every detail. <br><br><img src="' + require('@/assets/images/blog/mocha-sphere-method.jpg') + '"><br> Stay tuned as we share more of Mikael’s groundbreaking creations and their stories. <br><br> #DaVinciGourmet #ArtCraftScience #FlavourInnovation #BaristaCraftsmanship #CoffeeArtistry #FlavourGenius'
+          },
+          { 
+            blogImage: (require('@/assets/images/blog/irish-coffee-item.png')), 
+            title: 'From inspiration to creation - Another Recipe from Da Vinci Gourmet by Emerson Nascimento', 
+            date: 'November 19, 2024', 
+            content:'This is a take on my favourite coffee drink, Irish coffee. As a two-time champion of the Brazillian Coffee in Good Spirits competition, I’ve honed my skills in creating this classic bevarage, known for its rich and comforting flavors. <br><br><br> <img src="' + require('@/assets/images/blog/irish-coffee.jpg') + '"><br> For the DaVinci Gourmet Barista Craft Championship, I’ve crafted a non-alcoholic version that captures  the essence of traditional Irish coffee by carefully selecting ingredients that gives the original’s complex notes of caramel, whiskey, and butter, along with its signature silky texture and smooth, yougurt-like acidity, I ensure every sip delivers the familiar warmth and richness. <br><br><img src="' + require('@/assets/images/blog/irish-coffee-ingredients.jpg') + '"> <br><br><img src="' + require('@/assets/images/blog/irish-coffee-method.jpg') + '"><br>'
+          },
+          { 
+            blogImage: (require('@/assets/images/blog/growing-customer-base-item.png')), 
+            title: 'The secret to growing your customer base - Cafe Mystika', 
+            date: 'October 20, 2024', 
+            content:'The secret to growing your customer base isn’t just in the coffee, it’s in the experience. People crave more than just a cup, they want a reason to return, to feel like part of something special. Your café needs to be more than just a stop for caffeine; it should be a destination. So, how do you make that happen? <br><br><br> <img src="' + require('@/assets/images/blog/growing-customer-base.jpg') + '"> <br><br> Here are some actionable tips to help you grow your café business and draw in more customers: <br><br> ⭐️ Create an Instagrammable Atmosphere - People love sharing their experiences. Design your space with unique, visually appealing elements that make customers want to post and tag your café. <br><br> ⭐️ Offer Seasonal or Limited-Time Drinks - Keep your menu fresh by introducing seasonal coffees or limited-edition drinks. This not only keeps regulars coming back but also generates buzz. <br><br> ⭐️ Host Coffee Tasting Events - Engage your community by offering coffee tasting or brewing workshops. This positions your café as an expert hub and gives customers a reason to visit beyond their usual cup. <br><br> ⭐️ Loyalty Programs with a Twist - Everyone loves a free coffee, but add an extra layer by including personalized rewards based on their preferences, such as offering a free pastry with their favorite brew. <br><br> ⭐️ Collaborate with Local Businesses - Partner with local artisans or creators for pop-up events in your café. This expands your customer reach and gives your café a community-focused appeal. <br><br> ⭐️ Focus on Customer Service Excellence - Great coffee gets people in the door, but excellent service keeps them coming back. Train your staff to engage with customers personally, creating a warm and welcoming vibe. <br><br> ⭐️ Leverage Online Ordering and Delivery - Make it easy for customers to enjoy your coffee wherever they are by offering online ordering, takeout, and delivery options. <br><br> These tips are easy to implement but can make a huge difference in how people see your café. What’s one thing you’re ready to try?'
+          },
         ],
         showBlogModal: false,
         currentBlog: {},

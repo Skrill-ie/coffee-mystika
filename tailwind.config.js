@@ -37,6 +37,7 @@ module.exports = {
         imFell: ['Im Fell English', 'serif'], // Custom font for Im Fell
       },
       fontSize:{
+        lite:'18px',
         sm:'20px',
         mid:'32px',
         base:'38px',

@@ -11,7 +11,7 @@
       </div>
       <div class="w-full md:w-1/2 text-left px-3 md:px-10 max-w-3xl py-16 lg:py-0">
         <div class="text-4xl md:text-5xl mb-16 text-text-title">Coffee and Science come together, warmly brewed.</div>
-        <div class="text-text-paragraph text-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+        <div class="text-text-paragraph text-sm">At Café Mystika, tradition meets innovation in every cup. Guided by our mission to serve exceptional, sustainable beverages, we blend the art of coffee with the precision of science—crafting drinks that not only satisfy but spark connection. Rooted in Valencia and inspired by the world, each brew is a warm invitation to experience flavor, community, and culture in harmony.</div>
       </div>
     </div>
   </section>
@@ -86,7 +86,7 @@
   <section class="bg-black-secondary justify-items-center py-10 md:py-20"><!--Second Section-->
     <div class="font-radley px-3 pb-16 lg:pb-20 text-left md:text-center">
       <div class="text-4xl md:text-5xl text-text-title pb-10 w-full ">Our customer's favorite</div>
-      <div class="text-sm text-text-paragraph max-w-3xl">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.</div>
+      <div class="text-sm text-text-paragraph max-w-3xl">At Café Mystika, our customers’ favorites are a testament to craft and connection—beloved blends and signature sips that capture the heart of our community, one memorable drink at a time.</div>
     </div>
     <div class="w-full col-span-3">
       <div class="grid lg:gap-8 grid-cols-12 ">
@@ -98,20 +98,22 @@
   </section>
   <section class="bg-black-secondary justify-items-center"><!--Fifth Section-->
     <div class="flex flex-col lg:flex-row font-radley w-full m-auto items-center max-w-screen-xl lg:py-20">
-      <div class="order-2 md:order-1 px-3 lg:px-10 py-10 lg:py-0 mx-auto text-left lg:mr-16">
+      <div class="order-2 md:order-1 px-3 lg:px-10 py-10 lg:py-0 mx-auto text-left lg:mr-16 w-3/4"> <!-- Adjusted width -->
         <div class="text-4xl md:text-5xl text-text-title">Simply Cozy Sips</div>
-        <div class="text-sm  text-text-paragraph py-10 border-text-divider border-b">Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id?</div>
+        <div class="text-sm text-text-paragraph py-10 border-text-divider border-b">
+          From the rich sweetness of a Spanish Latte to the delicate bloom of Hibiscus Tea, Café Mystika serves comfort in every cup. Whether you're craving the bold kick of Vietnamese coffee or the smooth charm of a Vanilla Latte, each drink is crafted to warm your senses and make you feel right at home.
+        </div>
         <div class="row-span-2 pt-10">
           <ul>
-          <li  v-for="(coffee, index) in menu" :key="'coffee'+index"  class="pb-5 md:pb-7">
-            <div class="flex mb-3">
-              <div class="text-left text-sm text-text-paragraph md:w-48 font-bold"> {{ coffee.coffeeName }}</div>
-              <div class="border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5 opacity-55"></div>
-              <div class="text-right text-sm text-text-divider"> {{ coffee.coffeePrice }}<sup>.00</sup></div>
-            </div>
-            <div class="text-text-paragraph opacity-55">{{coffee.description}}</div>
-          </li>
-        </ul>
+            <li v-for="(coffee, index) in menu" :key="'coffee'+index" class="pb-5 md:pb-7">
+              <div class="flex mb-3">
+                <div class="text-left text-sm text-text-paragraph md:w-48 font-bold">{{ coffee.coffeeName }}</div>
+                <div class="border-dotted border-[#FDECD8] border-b-[2px] xl:border-b-[2px] w-full h-5 xl:h-4 mx-5 opacity-55"></div>
+                <div class="text-right text-sm text-text-divider">{{ coffee.coffeePrice }}<sup>.00</sup></div>
+              </div>
+              <div class="text-text-paragraph opacity-55">{{ coffee.description }}</div>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="order-1 md:order-2 m-auto hidden lg:block">
@@ -193,14 +195,14 @@ export default {
         featuredMerch:[
             {
               name:"LABARENTO",
-              description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.",
+              description: "Labarento’s signature sketch style captures the comforting chaos of everyday coffee rituals—unpolished, deeply human, and unmistakably local. With earthy tones and a characterful design, this limited-edition tee speaks to those who appreciate art with grit, warmth, and a touch of mystery.",
               price: "750.00",
               src:(require('@/assets/images/MERCH-V1.png')),
 
             },
           {
             name:"ORCULLO",
-            description: "Lorem ipsum odor amet, consectetuer adipiscing elit. Interdum neque ultricies sem eros id? Consequat a curae quam faucibus mollis. Sodales tincidunt elementum cursus lobortis suspendisse aptent ligula.",
+            description: "Bold, raw, and unapologetically expressive—this limited-edition shirt designed by Jolu Orcullo captures the vibrant pulse of Café Mystika. Fusing street-style graffiti with café culture, the artwork bursts with energy and nostalgia, turning each shirt into a wearable memory.",
             price: "750.00",
             src:(require('@/assets/images/MERCH-V2.png')),
 

@@ -4,6 +4,7 @@ import LandingPage from '../components/Landing.vue';
 import AboutUs from '../components/About.vue';
 import ContactUs from '../components/Contact.vue';
 import BlogPage from '../components/Blog.vue';
+import Services from '../components/Services.vue';
 
 
 // export all components
@@ -34,6 +35,11 @@ const router = createRouter({
     path: '/blog',
     name: 'Blog',
     component: BlogPage, // Route to Blog component
+  },
+  {
+    path: '/services',
+    name: 'Services',
+    component: Services, // Route to Services component
   },
 ],
   scrollBehavior(to, from, savedPosition) {
